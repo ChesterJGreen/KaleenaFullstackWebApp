@@ -26,7 +26,7 @@ export class BooksController extends BaseController {
    */
   async getAll(request, response, next) {
     try {
-      response.send(['value1', 'value2'])
+      response.send(['book1', 'book2'])
     } catch (error) {
       next(error)
     }
