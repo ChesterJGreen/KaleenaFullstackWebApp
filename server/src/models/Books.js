@@ -12,7 +12,76 @@ sequelize.define('Book', {
             max:150
         }
     },
-
+    icon1:{
+        type:DataTypes.STRING
+    },
+    icon2:{
+        type:DataTypes.STRING
+    },
+    numberInSeries:{
+        type:DataTypes.STRING
+    },
+    characterNames:{
+        type:DataTypes.ARRAY
+    },
+    tropes:{
+        type:DataTypes.ARRAY
+    },
+    seriesTitle:{
+        type:DataTypes.STRING
+    },
+    image:{
+        type:DataTypes.STRING
+    },
+    hook:{
+        type:DataTypes.STRING
+    },
+    shortDescription:{
+        type:DataTypes.STRING
+    },
+    tagline:{
+        type:DataTypes.STRING
+    },
+    femaleBookLine:{
+        type:DataTypes.STRING
+    },
+    femaleImage:{
+        type:DataTypes.STRING
+    },
+    femaleName:{
+        type:DataTypes.STRING
+    },
+    maleBookLine:{
+        type:DataTypes.STRING
+    },
+    maleImage:{
+        type:DataTypes.STRING
+    },
+    maleName:{
+        type:DataTypes.STRING
+    },
+    quote:{
+        type:DataTypes.STRING
+    },
+    theme:{
+        type:DataTypes.STRING
+    },
+    bookQuoteReference:{
+        type:DataTypes.STRING
+    },
+    map:{
+        type:DataTypes.STRING
+    },
+    characterQuote:{
+        type:DataTypes.STRING
+    },
+    progressPercent: {
+        type:DataTypes.STRING
+    },
+    releaseDate:{
+        type:DataTypes.STRING
+    }
+    
 
 })
 // export const ValueSchema = new Schema(
