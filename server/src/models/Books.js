@@ -7,7 +7,7 @@ sequelize.define('Book', {
         type:DataTypes.INTEGER
     },
     title:{
-        type:DataTypes.STRING,
+        type:DataTypes.TEXT,
         validate: {
             max:150
         }
@@ -19,7 +19,7 @@ sequelize.define('Book', {
         type:DataTypes.STRING
     },
     numberInSeries:{
-        type:DataTypes.STRING
+        type:DataTypes.INTEGER
     },
     characterNames:{
         type:DataTypes.ARRAY
@@ -34,16 +34,16 @@ sequelize.define('Book', {
         type:DataTypes.STRING
     },
     hook:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     shortDescription:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     tagline:{
         type:DataTypes.STRING
     },
     femaleBookLine:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     femaleImage:{
         type:DataTypes.STRING
@@ -52,7 +52,7 @@ sequelize.define('Book', {
         type:DataTypes.STRING
     },
     maleBookLine:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     maleImage:{
         type:DataTypes.STRING
@@ -61,7 +61,7 @@ sequelize.define('Book', {
         type:DataTypes.STRING
     },
     quote:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     theme:{
         type:DataTypes.STRING
@@ -73,13 +73,13 @@ sequelize.define('Book', {
         type:DataTypes.STRING
     },
     characterQuote:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     progressPercent: {
-        type:DataTypes.STRING
+        type:DataTypes.INTEGER
     },
     releaseDate:{
-        type:DataTypes.STRING
+        type:DataTypes.DATE
     }
     
 
