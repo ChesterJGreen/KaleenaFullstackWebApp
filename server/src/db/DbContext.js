@@ -1,12 +1,17 @@
 import mongoose from 'mongoose'
 import { AccountSchema } from '../models/Account'
 import { ValueSchema } from '../models/Value'
-import { Sequelize } from 'sequelize';
+import { Model, Sequelize } from 'sequelize';
 
-class DbContext {
-  Values = mongoose.model('Value', ValueSchema);
-  Account = mongoose.model('Account', AccountSchema);
-  //Books = Sequelize.model('Books',BooksSchema)
+class DbContext extends Model {
+  DbContext.init({
+
+  }, {
+    modelName: 'Book',
+    tableName: 'Books',
+    sequelize
+  });
+  Books = Sequelize.('Books',BooksSchema)
 }
 
 export const dbContext = new DbContext()

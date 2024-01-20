@@ -1,4 +1,3 @@
-import mongoose from 'mongoose'
 import { Sequelize } from 'sequelize'
 import { logger } from '../utils/Logger'
 
