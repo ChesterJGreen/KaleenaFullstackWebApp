@@ -4,11 +4,11 @@ import { socketProvider } from './SocketProvider'
 import { Startup } from './Startup'
 import { logger } from './utils/Logger'
 import { Sequelize } from 'sequelize'
+import { connectToDb } from './db/DbConfig.js'
 
 // create server & socketServer
 const app = express()
 const port = process.env.PORT || 3000
-const {connectToDb} = require('./db/DbConfig.js')
 
 if (process.env.NODE_ENV == 'dev') {
   // @ts-ignore

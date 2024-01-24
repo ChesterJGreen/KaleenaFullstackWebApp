@@ -1,50 +1,33 @@
-const { Types } = require('mysql2');
-const {DataTypes, Model, Sequelize} = require('sequelize');
+const Trope = require('./Trope.js');
+const Image = require('./Image.js');
+const Character = require('./Character.js');
+const Series = require('./Series.js');
+const Extras = require('./Extra.js');
+const ProgressBars = require('./ProgressBar.js');
+const { Sequelize } = require('sequelize');
+const Quote = require('./Quote.js');
 const sequelize = new Sequelize("sqlite::memory:");
-
+module.exports = (sequelize, DataTypes) => {
 const Book = sequelize.define('book', {
     id:{ type:DataTypes.INTEGER,allowNull: false, unique:true },
-    create_date:{ type:DataTypes.TEXT, validate: { max:255 }},
-    icon1:{ type:DataTypes.STRING, allowNull: false },
-    icon2:{ type:DataTypes.STRING, allowNull: true },
-    numberInSeries:{ type:DataTypes.INTEGER, allowNull:true },
-    characterNames:{ type:DataTypes.ARRAY(DataTypes.STRING)},
-    tropes:{ type:DataTypes.ARRAY },
-    seriesTitle:{ type:DataTypes.STRING },
-    image:{ type:DataTypes.STRING },
+    create_date:{ type:DataTypes.DATE, validate: { max:255 }},
+    update_date:{ type:DataTypes.DATE, validate: { max:255 }},
+    title:{ type:DataTypes.TEXT},
     hook:{ type:DataTypes.TEXT},
-    shortDescription:{ type:DataTypes.TEXT },
-    tagline:{ type:DataTypes.STRING },
-    femaleBookLine:{ type:DataTypes.TEXT },
-    femaleImage:{ type:DataTypes.STRING },
-    femaleName:{ type:DataTypes.STRING },
-    maleBookLine:{ type:DataTypes.TEXT },
-    maleImage:{ type:DataTypes.STRING },
-    maleName:{ type:DataTypes.STRING },
-    quote:{ type:DataTypes.TEXT },
+    short_description:{ type:DataTypes.TEXT},
+    tagline:{ type:DataTypes.STRING, validate: {max:255}},
     theme:{ type:DataTypes.STRING },
-    bookQuoteReference:{ type:DataTypes.STRING }  ,
-    map:{ type:DataTypes.STRING },
-    characterQuote:{ type:DataTypes.TEXT },
-    progressPercent: { type:DataTypes.INTEGER },
-    releaseDate:{ type:DataTypes.DATE }
+    trope_id: { type:DataTypes.ARRAY, references: { model: Trope, key: 'id'}},
+    characters_id: { type:DataTypes.ARRAY, references: { model: Character, key: 'id'}},
+    images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
+    series_id: { type:DataTypes.ARRAY, references: {model: Series, key: 'id'} },
+    progress_id: { type:DataTypes.ARRAY, references: {model: ProgressBars, key: 'id'} },
+    quotes_id: { type:DataTypes.ARRAY, references: {model: Quote, key: 'id'}},
+    extras_id: { type:DataTypes.ARRAY, references: {model: Extras, key: 'id'} },
 });
-(async ()=> {
-    await sequelize.sync()
-})();
 
-// export const ValueSchema = new Schema(
-//   {
-//     title: { type: String, required: true },
-//     description: { type: String, required: true },
-//     creatorId: { type: Schema.Types.ObjectId, ref: 'Profile', required: true }
-//   },
-//   { timestamps: true, toJSON: { virtuals: true } }
-// )
+// (async ()=> {
+//     await sequelize.sync()
+// })();
+}
 
-// ValueSchema.virtual('creator', {
-//   localField: 'creatorId',
-//   foreignField: '_id',
-//   justOne: true,
-//   ref: 'Profile'
-// })
