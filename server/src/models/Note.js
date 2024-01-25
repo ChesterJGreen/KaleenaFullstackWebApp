@@ -1,3 +1,4 @@
+const Extra = require("./Extra.js")
 const Image = require("./Image.js")
 
 module.exports = (sequelize, DataTypes) => {
@@ -9,4 +10,6 @@ module.exports = (sequelize, DataTypes) => {
        description: { type:DataTypes.TEXT},
        images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}}
    })
+   Note.belongsTo(Image)
+   Note.belongsTo(Extra)
 }

@@ -1,5 +1,6 @@
 const Quote = require("./Quote.js")
 const Image = require("./Image.js")
+const Book = require("./Book.js")
 
 module.exports = (sequelize, DataTypes) => {
     const Character = sequelize.define('characters', {
@@ -12,5 +13,8 @@ module.exports = (sequelize, DataTypes) => {
        images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
        quotes_id: { type: DataTypes.ARRAY, references: {model: Quote, key: 'id'}}
    })
-
-   }
+   Character.belongsToMany(Book)
+   Character.belongsToMany(Quote)
+   Character.belongsTo(Image)
+}
+   

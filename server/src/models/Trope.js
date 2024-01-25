@@ -1,6 +1,4 @@
-const { Types } = require('mysql2');
-const {DataTypes, Model, Sequelize} = require('sequelize');
-const sequelize = new Sequelize("sqlite::memory:");
+const Book = require('./Book.js');
 
 module.exports = (sequelize, DataTypes) => {
  const Trope = sequelize.define('tropes', {
@@ -10,4 +8,5 @@ module.exports = (sequelize, DataTypes) => {
     content: { type:DataTypes.TEXT, validate: { max: 255}
     }
 })
+Trope.belongsTo(Book)
 }

@@ -1,3 +1,4 @@
+const Book = require("./Book.js")
 
 module.exports = (sequelize, DataTypes) => {
     const ProgressBar = sequelize.define('progress_bars', {
@@ -8,4 +9,6 @@ module.exports = (sequelize, DataTypes) => {
        completetion_date:{ type:DataTypes.DATE, validate: { max:255 }},
        progress: { type:DataTypes.DOUBLE, validate: {max:255}}
    })
+   ProgressBar.belongsTo(Book)
+   
 }

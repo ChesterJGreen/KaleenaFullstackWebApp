@@ -1,3 +1,4 @@
+const Extra = require("./Extra.js")
 const Image = require("./Image.js")
 const Song = require("./Song.js")
 
@@ -10,4 +11,7 @@ module.exports = (sequelize, DataTypes) => {
        images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
        songs_id: { type:DataTypes.ARRAY, references: {model: Song, key: 'id'}}
    })
+   Playlist.belongsTo(Extra)
+   Playlist.belongsToMany(Song)
+   Playlist.belongsTo(Image)
 }

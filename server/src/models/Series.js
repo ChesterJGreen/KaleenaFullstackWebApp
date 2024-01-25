@@ -1,3 +1,4 @@
+const Book = require("./Book.js")
 
 module.exports = (sequelize, DataTypes) => {
     const Series = sequelize.define('series', {
@@ -6,4 +7,5 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
    })
+   Series.belongsToMany(Book)
 }

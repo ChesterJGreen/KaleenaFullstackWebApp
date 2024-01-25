@@ -1,8 +1,10 @@
+const { Sequelize } = require("sequelize")
 const Book = require("./Book.js")
 const Link = require("./Link.js")
 const Note = require("./Note.js")
 const Playlist = require("./Playlist.js")
 const Recipe = require("./Recipe.js")
+const DeletedScene = require("./DeletedScene.js")
 
 module.exports = (sequelize, DataTypes) => {
     const Extra = sequelize.define('extras', {
@@ -17,4 +19,13 @@ module.exports = (sequelize, DataTypes) => {
        notes_id: { type:DataTypes.ARRAY, references: {model: Note, key: 'id'}},
        playlists_id: { type:DataTypes.ARRAY, references: {model: Playlist, key: 'id'}}
    })
+   Extra.belongsTo(Book)
+   Extra.belongsToMany(DeletedScene)
+   Extra.belongsTo(Playlist)
+   Extra.belongsToMany(Recipe)
+   Extra.belongsToMany(Link)
+   Extra.belongsToMany(Note)
+   
+
+
 }

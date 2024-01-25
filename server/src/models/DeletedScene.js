@@ -1,3 +1,4 @@
+const Extra = require("./Extra.js")
 
 module.exports = (sequelize, DataTypes) => {
     const DeletedScene = sequelize.define('deleted_scenes', {
@@ -8,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
        content: { type:DataTypes.STRING, validate: {max:255}},
        chapter_number: { type:DataTypes.INTEGER},
    })
+   DeletedScene.belongsTo(Extra)
 }
 
 

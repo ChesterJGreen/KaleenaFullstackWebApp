@@ -1,3 +1,5 @@
+const Playlist = require("./Playlist.js")
+
 module.exports = (sequelize, DataTypes) => {
     const Song = sequelize.define('songs', {
        id:{ type:DataTypes.INTEGER,allowNull: false, unique:true },
@@ -7,4 +9,5 @@ module.exports = (sequelize, DataTypes) => {
        artist: { type:DataTypes.STRING, validate: {max:255}},
        position_in_playlist: { type:DataTypes.INTEGER}
    })
+   Song.belongsToMany(Playlist)
 }

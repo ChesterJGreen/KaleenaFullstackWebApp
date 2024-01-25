@@ -1,3 +1,4 @@
+const Extra = require("./Extra.js")
 const Image = require("./Image.js")
 
 module.exports = (sequelize, DataTypes) => {
@@ -8,4 +9,6 @@ module.exports = (sequelize, DataTypes) => {
        title: { type:DataTypes.STRING, validate: {max:255}},
        images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}}
    })
+   Recipe.belongsTo(Extra)
+   Recipe.belongsToMany(Image)
 }

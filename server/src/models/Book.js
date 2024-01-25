@@ -4,9 +4,9 @@ const Character = require('./Character.js');
 const Series = require('./Series.js');
 const Extras = require('./Extra.js');
 const ProgressBars = require('./ProgressBar.js');
-const { Sequelize } = require('sequelize');
 const Quote = require('./Quote.js');
-const sequelize = new Sequelize("sqlite::memory:");
+const Extra = require('./Extra.js');
+
 module.exports = (sequelize, DataTypes) => {
 const Book = sequelize.define('book', {
     id:{ type:DataTypes.INTEGER,allowNull: false, unique:true },
@@ -25,9 +25,14 @@ const Book = sequelize.define('book', {
     quotes_id: { type:DataTypes.ARRAY, references: {model: Quote, key: 'id'}},
     extras_id: { type:DataTypes.ARRAY, references: {model: Extras, key: 'id'} },
 });
+Book.belongsTo(Extra)
+Book.belongsToMany(Trope)
+Book.belongsToMany(Character)
+Book.belongsToMany(Image)
+Book.belongsToMany(Series)
+Book.belongsTo(ProgressBars)
+Book.belongsTo(Quote)
 
-// (async ()=> {
-//     await sequelize.sync()
-// })();
 }
 
+   
