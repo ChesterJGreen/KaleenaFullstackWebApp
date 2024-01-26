@@ -10,5 +10,4 @@ module.exports = (sequelize, DataTypes) => {
        progress: { type:DataTypes.DOUBLE, validate: {max:255}}
    })
    ProgressBar.belongsTo(Book)
-   
 }

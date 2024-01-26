@@ -9,25 +9,25 @@ const Extra = require('./Extra.js');
 
 module.exports = (sequelize, DataTypes) => {
 const Book = sequelize.define('book', {
-    id:{ type:DataTypes.INTEGER,allowNull: false, unique:true },
+    id:{ type:DataTypes.INTEGER,allowNull: false, unique:true},
     create_date:{ type:DataTypes.DATE, validate: { max:255 }},
     update_date:{ type:DataTypes.DATE, validate: { max:255 }},
     title:{ type:DataTypes.TEXT},
     hook:{ type:DataTypes.TEXT},
     short_description:{ type:DataTypes.TEXT},
     tagline:{ type:DataTypes.STRING, validate: {max:255}},
-    theme:{ type:DataTypes.STRING },
+    theme:{ type:DataTypes.STRING},
     trope_id: { type:DataTypes.ARRAY, references: { model: Trope, key: 'id'}},
     characters_id: { type:DataTypes.ARRAY, references: { model: Character, key: 'id'}},
     images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
-    series_id: { type:DataTypes.ARRAY, references: {model: Series, key: 'id'} },
+    series_id: { type:DataTypes.ARRAY, references: {model: Series, key: 'id'}},
     progress_id: { type:DataTypes.ARRAY, references: {model: ProgressBars, key: 'id'} },
     quotes_id: { type:DataTypes.ARRAY, references: {model: Quote, key: 'id'}},
-    extras_id: { type:DataTypes.ARRAY, references: {model: Extras, key: 'id'} },
+    extras_id: { type:DataTypes.ARRAY, references: {model: Extras, key: 'id'}}
 });
 Book.belongsTo(Extra)
 Book.belongsToMany(Trope)
-Book.belongsToMany(Character)
+Book.belongsToMany(Character) 
 Book.belongsToMany(Image)
 Book.belongsToMany(Series)
 Book.belongsTo(ProgressBars)
