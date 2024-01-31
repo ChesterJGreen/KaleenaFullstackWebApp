@@ -10,4 +10,5 @@ module.exports = (sequelize, DataTypes) => {
        background2: { type:DataTypes.String, validate: {max:255}}
    })
    Series.belongsToMany(Book)
+   Series.hasMany(Book)
 }

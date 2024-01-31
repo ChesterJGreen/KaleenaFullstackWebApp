@@ -11,4 +11,5 @@ module.exports = (sequelize, DataTypes) => {
    })
    Recipe.belongsTo(Extra)
    Recipe.belongsToMany(Image)
+   Recipe.hasMany(Image)
 }

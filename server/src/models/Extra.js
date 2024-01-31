@@ -21,10 +21,14 @@ module.exports = (sequelize, DataTypes) => {
    })
    Extra.belongsTo(Book)
    Extra.belongsToMany(DeletedScene)
+   Extra.hasMany(DeletedScene)
    Extra.belongsTo(Playlist)
    Extra.belongsToMany(Recipe)
+   Extra.hasMany(Recipe)
    Extra.belongsToMany(Link)
+   Extra.hasMany(Link)
    Extra.belongsToMany(Note)
+   Extra.hasMany(Note)
    
 
 

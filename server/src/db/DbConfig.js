@@ -5,8 +5,9 @@ export const sequelize = new Sequelize(
   'kaleenas_WebsiteDB',
   'kaleenas_cjgreenie',
   'Whistlewhileyouwork#1', {
+    host:'162.241.194.204',
     dialect:'mysql',
-    host:'162.241.194.204'
+    operatorsAliases: 0
   }
 
 );

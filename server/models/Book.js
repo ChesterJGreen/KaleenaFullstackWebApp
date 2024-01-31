@@ -6,7 +6,7 @@ const Extras = require('./Extra.js');
 const ProgressBars = require('./ProgressBar.js');
 const Quote = require('./Quote.js');
 const Extra = require('./Extra.js');
-const { DataTypes, Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('sqlite::memory:')
 
 // module.exports = (sequelize, DataTypes) => {

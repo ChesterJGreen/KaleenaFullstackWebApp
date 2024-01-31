@@ -13,5 +13,6 @@ module.exports = (sequelize, DataTypes) => {
    })
    Playlist.belongsTo(Extra)
    Playlist.belongsToMany(Song)
+   Playlist.hasMany(Song)
    Playlist.belongsTo(Image)
 }
