@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
        create_date:{ type:DataTypes.DATE, validate: { max:255 }},
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
-       images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
-       songs_id: { type:DataTypes.ARRAY, references: {model: Song, key: 'id'}}
+       images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
+       songs_id: { type:DataTypes.INTEGER, references: {model: Song, key: 'id'}}
    })
    Playlist.belongsTo(Extra)
    Playlist.belongsToMany(Song)

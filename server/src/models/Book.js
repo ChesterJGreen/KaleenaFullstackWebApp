@@ -6,10 +6,10 @@ const Extras = require('./Extra.js');
 const ProgressBars = require('./ProgressBar.js');
 const Quote = require('./Quote.js');
 const Extra = require('./Extra.js');
-const { DataTypes, Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('sqlite::memory:')
 
-// module.exports = (sequelize, DataTypes) => {
+ module.exports = (sequelize, DataTypes) => {
 const Book = sequelize.define('book', {
     id:{ type:DataTypes.INTEGER, allowNull: false, unique:true},
     create_date:{ type:DataTypes.DATE, validate: { max:255 }},
@@ -19,13 +19,13 @@ const Book = sequelize.define('book', {
     short_description:{ type:DataTypes.TEXT},
     tagline:{ type:DataTypes.STRING, validate: {max:255}},
     theme:{ type:DataTypes.STRING},
-    trope_id: { type:DataTypes.ARRAY, references: { model: Trope, key: 'id'}},
-    characters_id: { type:DataTypes.ARRAY, references: { model: Character, key: 'id'}},
-    images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
-    series_id: { type:DataTypes.ARRAY, references: {model: Series, key: 'id'}},
-    progress_id: { type:DataTypes.ARRAY, references: {model: ProgressBars, key: 'id'} },
-    quotes_id: { type:DataTypes.ARRAY, references: {model: Quote, key: 'id'}},
-    extras_id: { type:DataTypes.ARRAY, references: {model: Extras, key: 'id'}}
+    trope_id: { type:DataTypes.INTEGER, references: { model: Trope, key: 'id'}},
+    characters_id: { type:DataTypes.INTEGER, references: { model: Character, key: 'id'}},
+    images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
+    series_id: { type:DataTypes.INTEGER, references: {model: Series, key: 'id'}},
+    progressbars_id: { type:DataTypes.INTEGER, references: {model: ProgressBars, key: 'id'} },
+    quotes_id: { type:DataTypes.INTEGER, references: {model: Quote, key: 'id'}},
+    extras_id: { type:DataTypes.INTEGER, references: {model: Extras, key: 'id'}}
 });
 Book.belongsTo(Extra)
 Book.belongsToMany(Trope)
@@ -37,6 +37,6 @@ Book.belongsTo(Series)
 Book.belongsTo(ProgressBars)
 Book.belongsTo(Quote)
 
-// }
+ }
 
    

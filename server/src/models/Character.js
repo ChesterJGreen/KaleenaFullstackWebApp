@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
        sex: { type:DataTypes.ENUM('male','female'), validate: { max: 255}},
        age: { type:DataTypes.INTEGER},
        full_name: { type:DataTypes.STRING, validate: {max:255}},
-       images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}},
-       quotes_id: { type: DataTypes.ARRAY, references: {model: Quote, key: 'id'}}
+       images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
+       quotes_id: { type: DataTypes.INTEGER, references: {model: Quote, key: 'id'}}
    })
    Character.belongsToMany(Book)
    Character.belongsTo(Quote)

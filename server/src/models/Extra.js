@@ -14,10 +14,11 @@ module.exports = (sequelize, DataTypes) => {
        title: { type:DataTypes.STRING, validate: {max:255}},
        description: { type:DataTypes.TEXT},
        book_id: { type:DataTypes.INTEGER, references: {model: Book, key: 'id'}},
-       recipes_id: { type:DataTypes.ARRAY, references: {model: Recipe, key: 'id'}},
-       links_id: { type:DataTypes.ARRAY, references: {model: Link, key: 'id'}},
-       notes_id: { type:DataTypes.ARRAY, references: {model: Note, key: 'id'}},
-       playlists_id: { type:DataTypes.ARRAY, references: {model: Playlist, key: 'id'}}
+       recipes_id: { type:DataTypes.INTEGER, references: {model: Recipe, key: 'id'}},
+       links_id: { type:DataTypes.INTEGER, references: {model: Link, key: 'id'}},
+       notes_id: { type:DataTypes.INTEGER, references: {model: Note, key: 'id'}},
+       playlists_id: { type:DataTypes.INTEGER, references: {model: Playlist, key: 'id'}},
+       deleted_scenes_id: { type:DataTypes.INTEGER, references: { model: DeletedScene, key:'id'}}
    })
    Extra.belongsTo(Book)
    Extra.belongsToMany(DeletedScene)

@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        header: { type:DataTypes.STRING, validate: {max:255}},
        description: { type:DataTypes.TEXT},
-       images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}}
+       images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
    })
    Note.belongsTo(Image)
    Note.belongsTo(Extra)

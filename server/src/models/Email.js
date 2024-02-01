@@ -8,8 +8,7 @@ module.exports = (sequelize, DataTypes) => {
        create_date:{ type:DataTypes.DATE, validate: { max:255 }},
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        email: { type:DataTypes.STRING, validate: {max:255}},
-       first_name: { type:DataTypes.STRING, validate: {max:255}},
-       last_name: { type:DataTypes.STRING, validate: {max:255}},
+       name: { type:DataTypes.STRING, validate: {max:255}},
        unsubscribe: { type:DataTypes.BOOLEAN, validate: {max:255}}
    }, { tableName: 'emails'});
 }
