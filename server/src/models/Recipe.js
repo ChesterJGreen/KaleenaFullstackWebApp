@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
        create_date:{ type:DataTypes.DATE, validate: { max:255 }},
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
-       images_id: { type:DataTypes.ARRAY, references: {model: Image, key: 'id'}}
+       images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
    })
    Recipe.belongsTo(Extra)
    Recipe.belongsToMany(Image)

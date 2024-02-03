@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
        create_date:{ type:DataTypes.DATE, validate: { max:255 }},
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        content: { type:DataTypes.STRING, validate: {max:255}},
-       type: { type:DataTypes.ENUM('image', 'icon', 'map', 'pdf', 'photo'), validate: { max: 25}},
+       type: { type:DataTypes.ENUM('image', 'icon', 'map', 'pdf', 'photo', 'background'), validate: { max: 25}},
    })
    Image.belongsToMany(Playlist)
    Image.belongsToMany(Recipe)

@@ -19,7 +19,7 @@ const Book = sequelize.define('book', {
     short_description:{ type:DataTypes.TEXT},
     tagline:{ type:DataTypes.STRING, validate: {max:255}},
     theme:{ type:DataTypes.STRING},
-    trope_id: { type:DataTypes.INTEGER, references: { model: Trope, key: 'id'}},
+    tropes_id: { type:DataTypes.INTEGER, references: { model: Trope, key: 'id'}},
     characters_id: { type:DataTypes.INTEGER, references: { model: Character, key: 'id'}},
     images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
     series_id: { type:DataTypes.INTEGER, references: {model: Series, key: 'id'}},
@@ -27,16 +27,14 @@ const Book = sequelize.define('book', {
     quotes_id: { type:DataTypes.INTEGER, references: {model: Quote, key: 'id'}},
     extras_id: { type:DataTypes.INTEGER, references: {model: Extras, key: 'id'}}
 });
-Book.belongsTo(Extra)
-Book.belongsToMany(Trope)
-Book.hasMany(Trope)
-Book.belongsToMany(Character)
-Book.hasMany(Character)
-Book.belongsToMany(Image)
-Book.belongsTo(Series)
-Book.belongsTo(ProgressBars)
+
+Book.belongsTo(Extra),
+Book.belongsToMany(Trope),
+Book.hasMany(Trope),
+Book.belongsToMany(Character),
+Book.hasMany(Character),
+Book.belongsToMany(Image),
+Book.belongsTo(Series),
+Book.belongsTo(ProgressBars),
 Book.belongsTo(Quote)
-
  }
-
-   

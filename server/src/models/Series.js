@@ -1,4 +1,5 @@
 const Book = require("./Book.js")
+const Image = require("./Image.js")
 
 module.exports = (sequelize, DataTypes) => {
     const Series = sequelize.define('series', {
@@ -6,9 +7,9 @@ module.exports = (sequelize, DataTypes) => {
        create_date:{ type:DataTypes.DATE, validate: { max:255 }},
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
-       background1: { type:DataTypes.String, validate: {max:255}},
-       background2: { type:DataTypes.String, validate: {max:255}}
+       images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
    })
    Series.belongsToMany(Book)
    Series.hasMany(Book)
+   Series.has(Image)
 }

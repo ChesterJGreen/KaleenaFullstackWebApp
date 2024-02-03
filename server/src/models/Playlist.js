@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
        images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
-       songs_id: { type:DataTypes.INTEGER, references: {model: Song, key: 'id'}}
+       songs_id: { type:DataTypes.INTEGER, references: {model: Song, key: 'id'}},
+       position_in_playlist: { type: DataTypes.INTEGER, validate: {max: 255}}
    })
    Playlist.belongsTo(Extra)
    Playlist.belongsToMany(Song)
