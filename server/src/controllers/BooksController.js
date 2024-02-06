@@ -7,10 +7,9 @@ export class BooksController extends BaseController {
     super('api/books')
     this.router
       .get('', this.getAll)
-      .get('/:id', this.getOneValue)
+      .get('/:id', this.getById)
       .post('', this.create)
       .put('/:id', this.edit)
-      .patch('/:id', this.editOne)
       .delete('/:id', this.destroy)
       // NOTE If there is an authenticated user it will attach here otherwise allows through
       //.get('/:id', Auth0Provider.tryAttachUserInfo, this.getOneValue)
@@ -26,7 +25,8 @@ export class BooksController extends BaseController {
    */
   async getAll(request, response, next) {
     try {
-      response.send(['book1', 'book2'])
+      const books = await booksService.getAll(request.query)
+      response.send(books)
     } catch (error) {
       next(error)
     }
@@ -38,10 +38,10 @@ export class BooksController extends BaseController {
    * @param {import("express").Response} response
    * @param {import("express").NextFunction} next
    */
-  async getOneValue(request, response, next) {
+  async getById(request, response, next) {
     try {
-      const value = booksService.findById(request.params.id)
-      response.send(value)
+      const book = booksService.getById(request.params.id)
+      response.send(book)
     } catch (error) {
       next(error)
     }
@@ -52,32 +52,27 @@ export class BooksController extends BaseController {
     try {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
       request.body.creatorId = request.userInfo.id
-
-      response.send(request.body)
+      const book = await booksService.create(request.body)
+      response.send(book)
     } catch (error) {
       next(error)
     }
   }
   async edit(request, response, next) {
     try {
-      const value = booksService.findById(request.params.id)
-      response.send(value)
-    } catch (error) {
-      next(error)
-    }
-  }
-  async editOne(request, response, next) {
-    try {
-      const value = booksService.findById(request.params.id)
-      response.send(value)
+      request.body.creatorId = request.userInfo.id
+      request.body.id = request.params.id
+      const book = booksService.edit(request.body)
+      response.send(book)
     } catch (error) {
       next(error)
     }
   }
   async destroy(request, response, next) {
     try {
-      const value = booksService.findById(request.params.id)
-      response.send(value)
+      request.body.creatorId = request.userInfo.id
+      const book = booksService.destroy(request.params.id, request.userInfo.id)
+      response.send(book)
     } catch (error) {
       next(error)
     }

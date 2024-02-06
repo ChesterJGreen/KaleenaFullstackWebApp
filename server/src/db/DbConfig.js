@@ -7,7 +7,7 @@ export const sequelize = new Sequelize(
   'Whistlewhileyouwork#1', {
     host:'162.241.194.204',
     dialect:'mysql',
-    operatorsAliases: 0
+    operatorsAliases: false
   }
 
 );
