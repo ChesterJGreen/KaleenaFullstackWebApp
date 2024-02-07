@@ -11,10 +11,13 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        content: { type:DataTypes.STRING, validate: {max:255}},
        type: { type:DataTypes.ENUM('image', 'icon', 'map', 'pdf', 'photo', 'background'), validate: { max: 25}},
-   })
-   Image.belongsToMany(Playlist)
-   Image.belongsToMany(Recipe)
-   Image.belongsToMany(Note)
-   Image.belongsTo(Character)
-   Image.belongsTo(Book)
+    }, { freezeTableName: false, timestamps: true });
+   Image.associate = function(models) {
+    Image.belongsToMany(sequelize.define(models.Playlist)),
+   Image.belongsToMany(sequelize.define(models.Recipe)),
+   Image.belongsToMany(sequelize.define(models.Note)),
+   Image.belongsTo(sequelize.define(models.Character)),
+   Image.belongsTo(sequelize.define(models.Book))
+}
+return Image
 }

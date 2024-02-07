@@ -1,4 +1,3 @@
-const Extra = require("./Extra.js")
 const Image = require("./Image.js")
 
 module.exports = (sequelize, DataTypes) => {
@@ -9,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
        header: { type:DataTypes.STRING, validate: {max:255}},
        content: { type:DataTypes.TEXT},
        images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
-   })
-   Note.belongsTo(Image)
-   Note.belongsTo(Extra)
+    }, { freezeTableName: false, timestamps: true})
+   Note.associate = function(models) {
+    Note.has(sequelize.define(models.Image)),
+   Note.belongsTo(sequelize.define(models.Extra))
+}
+return Note
 }

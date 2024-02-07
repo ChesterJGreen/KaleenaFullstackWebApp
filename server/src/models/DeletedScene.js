@@ -8,8 +8,11 @@ module.exports = (sequelize, DataTypes) => {
        title: { type:DataTypes.STRING, validate: {max:255}},
        content: { type:DataTypes.TEXT, validate: {max:255}},
        chapter_number: { type:DataTypes.INTEGER},
-   })
-   DeletedScene.belongsTo(Extra)
+    }, { freezeTableName: false, timestamps: true });
+   DeletedScene.associate = function(models) {
+       DeletedScene.belongsTo(sequelize.define(models.Extra))
+    }
+    return DeletedScene
 }
 
 

@@ -1,4 +1,3 @@
-const Book = require('./Book.js');
 
 module.exports = (sequelize, DataTypes) => {
  const Trope = sequelize.define('tropes', {
@@ -7,6 +6,9 @@ module.exports = (sequelize, DataTypes) => {
     update_date:{ type:DataTypes.DATE, validate: { max:255 }},
     content: { type:DataTypes.TEXT, validate: { max: 255}
     }
-})
-Trope.belongsTo(Book)
+}, { freezeTableName: false, timestamps: true})
+Trope.associate = function(models) {
+Trope.belongsTo(sequelize.define(models.Book))
+}
+return Trope
 }

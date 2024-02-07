@@ -1,6 +1,5 @@
 const Quote = require("./Quote.js")
 const Image = require("./Image.js")
-const Book = require("./Book.js")
 const Name = require("./Name.js")
 
 module.exports = (sequelize, DataTypes) => {
@@ -13,9 +12,12 @@ module.exports = (sequelize, DataTypes) => {
        names_id: { type: DataTypes.INTEGER, references: {model: Name, key: 'id'}},
        images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}},
        quotes_id: { type: DataTypes.INTEGER, references: {model: Quote, key: 'id'}}
-   })
-   Character.belongsToMany(Book)
-   Character.belongsTo(Quote)
-   Character.belongsTo(Image)
+    }, { freezeTableName: false, timestamps: true });
+   Character.associate = function(models) {
+   Character.belongsToMany(sequelize.define(models.Book)),
+   Character.has(sequelize.define(models.Quote)),
+   Character.has(sequelize.definte(models.Image))
+   };
+   return Character
 }
    

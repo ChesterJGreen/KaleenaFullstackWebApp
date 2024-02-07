@@ -8,8 +8,11 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
        images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
-   })
-   Recipe.belongsTo(Extra)
-   Recipe.belongsToMany(Image)
-   Recipe.hasMany(Image)
+    }, { freezeTableName: false, timestamps: true})
+   Recipe.associate = function(models) {
+   Recipe.belongsTo(sequelize.define(models.Extra)),
+   Recipe.belongsToMany(sequelize.define(models.Image)),
+   Recipe.hasMany(sequelize.define(models.Image))
+}
+return Recipe
 }

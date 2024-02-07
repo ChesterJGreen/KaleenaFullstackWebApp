@@ -7,8 +7,9 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        content: { type:DataTypes.STRING, validate: {max:255}},
        type: { type:DataTypes.ENUM('youtube', 'pinterest', 'spotify', 'other'), validate: { max: 25}},
-   })
-   Link.belongsToMany(Extra)
+   }, { freezeTableName: false, timeStamps: true })
+   Link.associate = function(models) {
+   Link.belongsToMany(sequelize.define(models.Extra))
 }
-
-
+return Link
+}

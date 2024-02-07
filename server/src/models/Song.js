@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
        title: { type:DataTypes.STRING, validate: {max:255}},
        artist: { type:DataTypes.STRING, validate: {max:255}},
        position_in_playlist: { type:DataTypes.INTEGER, validate: {max:255}}
-   })
-   Song.belongsToMany(Playlist)
+    }, { freezeTableName: false, timestamps: true})
+   Song.associate = function(models) {
+   Song.belongsToMany(sequelize.define(models.Playlist))
+}
+return Song
 }

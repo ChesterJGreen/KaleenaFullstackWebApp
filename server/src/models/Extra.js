@@ -19,18 +19,18 @@ module.exports = (sequelize, DataTypes) => {
        notes_id: { type:DataTypes.INTEGER, references: {model: Note, key: 'id'}},
        playlists_id: { type:DataTypes.INTEGER, references: {model: Playlist, key: 'id'}},
        deleted_scenes_id: { type:DataTypes.INTEGER, references: { model: DeletedScene, key:'id'}}
-   })
-   Extra.belongsTo(Book)
-   Extra.belongsToMany(DeletedScene)
-   Extra.hasMany(DeletedScene)
-   Extra.belongsTo(Playlist)
-   Extra.belongsToMany(Recipe)
-   Extra.hasMany(Recipe)
-   Extra.belongsToMany(Link)
-   Extra.hasMany(Link)
-   Extra.belongsToMany(Note)
-   Extra.hasMany(Note)
-   
-
-
+    }, { freezeTableName: false, timestamps: true });
+Extra.associate = function(models) {
+   Extra.belongsTo(sequelize.define(models.Book)),
+   Extra.belongsToMany(sequelize.define(models.DeletedScene)),
+   Extra.hasMany(sequelize.define(models.DeletedScene)),
+   Extra.belongsTo(sequelize.define(models.Playlist)),
+   Extra.belongsToMany(sequelize.define(models.Recipe)),
+   Extra.hasMany(sequelize.define(models.Recipe)),
+   Extra.belongsToMany(sequelize.define(models.Link)),
+   Extra.hasMany(sequelize.define(models.Link)),
+   Extra.belongsToMany(sequelize.define(models.Note)),
+   Extra.hasMany(sequelize.define(models.Note))
+};
+return Extra
 }

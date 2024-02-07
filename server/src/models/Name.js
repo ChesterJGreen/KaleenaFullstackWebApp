@@ -1,4 +1,5 @@
 const { Sequelize } = require("sequelize");
+const Email = require("./Email.js");
 const sequelize = new Sequelize('sqlite::memory')
 
 module.exports = (sequelize, DataTypes) => {
@@ -9,7 +10,9 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        first_name: { type:DataTypes.STRING, validate: {max:255}},
        last_name: { type:DataTypes.STRING, validate: {max:255}}
-   }, { tableName: 'names'});
+   }, { tableName: 'names', freezeTableName: false, timeStamps: true});
+Name.associate = function(models) {
+   Name.belongsTo(sequelize.define(models.Character))
 }
-   async() => {await sequelize.sync();}
-
+return Name
+}

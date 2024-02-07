@@ -8,8 +8,11 @@ module.exports = (sequelize, DataTypes) => {
        update_date:{ type:DataTypes.DATE, validate: { max:255 }},
        title: { type:DataTypes.STRING, validate: {max:255}},
        images_id: { type:DataTypes.INTEGER, references: {model: Image, key: 'id'}}
-   })
-   Series.belongsToMany(Book)
-   Series.hasMany(Book)
-   Series.has(Image)
+    }, { freezeTableName: false, timestamps: true})
+   Series.associate = function(models) {
+   Series.belongsToMany(sequelize.define(models.Book))
+   Series.hasMany(sequelize.define(models.Book)),
+   Series.has(sequelize.define(models.Image))
+}
+return Series
 }

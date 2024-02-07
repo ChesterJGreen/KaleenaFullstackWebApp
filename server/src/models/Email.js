@@ -10,7 +10,10 @@ module.exports = (sequelize, DataTypes) => {
        email: { type:DataTypes.STRING, validate: {max:255}},
        name: { type:DataTypes.STRING, validate: {max:255}},
        unsubscribe: { type:DataTypes.ENUM('true', 'false'), validate: {max:255}}
-   }, { tableName: 'emails'});
+      }, { freezeTableName: false, timestamps: true });
+  Email.associate = function(models) {
+   Email.has(sequelize.define(models.Name))
+  }
+  return Email
 }
-   async() => {await sequelize.sync();}
 
