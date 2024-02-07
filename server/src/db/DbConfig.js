@@ -1,7 +1,5 @@
-import { Sequelize } from 'sequelize'
-import { logger } from '../utils/Logger'
-
-export const sequelize = new Sequelize(
+const Sequelize = require('sequelize');
+const db = new Sequelize(
   'kaleenas_WebsiteDB',
   'kaleenas_cjgreenie',
   'Whistlewhileyouwork#1', {
@@ -12,17 +10,17 @@ export const sequelize = new Sequelize(
 
 );
 
-export const connectToDb = async ()=>{
+const connectToDb = async ()=>{
   try{
-    await sequelize.authenticate();
+    await db.authenticate();
     console.log("Successfully connected to the db");
   }
   catch(error){
     console.log(error);
   }
 }
-
-module.exports = { sequelize, connectToDb }
+connectToDb();
+module.exports = { db }
 // mongoose.connection.on('error', err => {
 //   logger.error('[DATABASE ERROR]:', err)
 // })

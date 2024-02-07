@@ -1,16 +1,16 @@
-import { models } from '../db/DbContext.js';
-import Character from '../models/Character.js';
-
+import { db } from '../db/DbConfig.js';
 const { QueryTypes } = require('sequelize')
 const Book = require('../models/Book.js')
 
 class BookRepositories {
-  async find(query) {
+  async getAll(query) {
     // const books = await models.Book.findByPk(query)
-    const books = await models.find(query)
+    const books = await db.models.Book.findAll(query)
+        return books
   }
-  async findById(id) {
-    const book = await Book.findByPk(id)
+  async getById(id , query) {
+    const book = await db.models.Book.findById(id, query)
+        return book;
 
 }
   create(body) {

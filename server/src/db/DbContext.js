@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize')
 const sequelize = new Sequelize('sqlite::memory:')
 
-const models = [
+const allModels = [
     require('../models/Book.js'),
     require('../models/Character.js'),
     require('../models/DeletedScene.js'),
@@ -18,6 +18,6 @@ const models = [
     require('../models/Series.js'),
     require('../models/Song.js'),
     require('../models/Trope.js')
-].map(m=>m(sequelize));
+].map(() =>(sequelize));
 
-module.exports = { sequelize, models }
+module.exports = { sequelize, allModels }
