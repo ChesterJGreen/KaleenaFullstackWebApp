@@ -3,8 +3,7 @@ import { createServer } from 'http'
 import { socketProvider } from './SocketProvider'
 import { Startup } from './Startup'
 import { logger } from './utils/Logger'
-import { Sequelize } from 'sequelize'
-import { connectToDb } from './db/DbConfig.js'
+const DbConfig = require('./db/DbConfig.js')
 
 // create server & socketServer
 const app = express()
@@ -26,5 +25,5 @@ socketProvider.initialize(httpServer)
 // Start Server
 httpServer.listen(port, async () => {
   logger.log(`[SERVING ON PORT: ${port}]`);
-  await connectToDb();
+  await DbConfig.db;
 })

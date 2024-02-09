@@ -25,7 +25,7 @@ export class BooksController extends BaseController {
    */
   async getAll(request, response, next) {
     try {
-      const books = await booksService.getAll(request.query)
+      const books = await booksService.getAll()
       response.send(books)
     } catch (error) {
       next(error)

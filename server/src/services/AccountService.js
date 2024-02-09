@@ -1,4 +1,4 @@
-import { dbContext } from '../db/DbContext'
+const DbConfig = require('../db/DbConfig.js')
 
 // Private Methods
 
@@ -13,7 +13,7 @@ async function createAccountIfNeeded(account, user) {
     if(typeof user.name == 'string' && user.name.includes('@')){
       user.name = user.nickname
     }
-    account = await dbContext.Account.create({
+    account = await DbConfig.db.models.Account.create({
       ...user,
       subs: [user.sub]
     })
@@ -55,9 +55,7 @@ class AccountService {
    * @param {any} user
    */
   async getAccount(user) {
-    let account = await dbContext.Account.findOne({
-      _id: user.id
-    })
+    let account = await DbConfig.db.models.Account.findById(user.id)
     account = await createAccountIfNeeded(account, user)
     await mergeSubsIfNeeded(account, user)
     return account
@@ -70,11 +68,8 @@ class AccountService {
    */
   async updateAccount(user, body) {
     const update = sanitizeBody(body)
-    const account = await dbContext.Account.findOneAndUpdate(
-      { _id: user.id },
-      { $set: update },
-      { runValidators: true, setDefaultsOnInsert: true, new: true }
-    )
+    const account = await DbConfig.db.models.Account.findById( user.id, body)
+
     return account
   }
 }
