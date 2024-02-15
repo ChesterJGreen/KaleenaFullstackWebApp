@@ -2,11 +2,13 @@ import { db } from '../db/DbConfig.js';
 const { QueryTypes } = require('sequelize')
 const Book = require('../models/Book.js')
 
-class BookRepositories {
+class BooksRepositories {
   async getAll(query) {
     // const books = await models.Book.findByPk(query)
-    const books = await db.models.Book.findAll(query)
-        return books
+    console.log("in the respostory")
+    // const dude = await db.models.Book.
+    const books = await db.models.Book.find().toJSON()
+        return console.log(books)
   }
   async getById(id , query) {
     const book = await db.models.Book.findById(id, query)
@@ -24,4 +26,4 @@ class BookRepositories {
   }
 
 }
-export const booksRepositories = new BookRepositories()
+export const booksRepositories = new BooksRepositories()

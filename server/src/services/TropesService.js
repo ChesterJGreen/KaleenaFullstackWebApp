@@ -5,44 +5,44 @@ const Image = require('../models/Image.js')
 const Series = require('../models/Series.js')
 const ProgressBar = require('../models/ProgressBar.js')
 const Extra = require('../models/Extra.js')
-import { booksRepositories } from '../repositories/BooksRepositories.js'
-import { BadRequest } from '../utils/Errors'
+import { tropesRepositories } from '../repositories/TropesRepositories.js'
+import { BadRequest } from '../utils/Errors.js'
 
-class BooksService {
+class TropesService {
   async getAll(query = {}) {
     console.log("in the service")
-    const books = await booksRepositories.getAll({
+    const tropes = await tropesRepositories.getAll({
       include: [[Trope], [Quote], [Character], [Image], [Series], [ProgressBar], [Extra]]
     })
-    return books
+    return tropes
   }
   async getById(id) {
-    const book = await booksRepositories.getById(id, {
+    const trope = await tropesRepositories.getById(id, {
       include: [[Trope], [Quote], [Character], [Image], [Series], [ProgressBar], [Extra]]
     })
-    if (book == null ) {
+    if (trope == null ) {
       throw new BadRequest('Invalid ID')
     }
-    return book
+    return trope
   }
   async create(body) {
-    const book = await booksRepositories.create(body)
-    return await booksRepositories.getById()
+    const trope = await tropesRepositories.create(body)
+    return await tropesRepositories.getById()
   }
   async edit(body) {
-    const book = await booksRepositories.findByIdAndUpdate(body.id, body, {new: true, runValidators: true})
-    if (book ==  null) {
+    const trope = await tropesRepositories.findByIdAndUpdate(body.id, body, {new: true, runValidators: true})
+    if (trope ==  null) {
       throw new BadRequest('Invalid Id')
     }
-    return book
+    return trope
   }
   async destroy(id, userId) {
-    const book = await booksRepositories.findOneAndUpdate({ _id: id, creatorID: userId})
-    if (book == null) {
+    const trope = await tropesRepositories.findOneAndUpdate({ _id: id, creatorID: userId})
+    if (trope == null) {
       throw new BadRequest('Invalid Id')
     }
-    return book
+    return trope
   }
 }
 
-export const booksService = new BooksService()
+export const tropesService = new TropesService()
