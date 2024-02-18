@@ -1,14 +1,18 @@
+const { Sequelize, DataTypes, Model} = require('sequelize')
+const sequelize = new Sequelize('sqlite::memory:')
 
-module.exports = (sequelize, DataTypes) => {
- const Trope = sequelize.define('tropes', {
-    id:{ type:DataTypes.INTEGER,allowNull: false, unique:true },
+
+class Trope extends Model {
+    content;
+}
+Trope.init({
+    id:{ type:DataTypes.INTEGER,allowNull: false, unique:true, primaryKey: true, autoIncrement: true},
     create_date:{ type:DataTypes.DATE, validate: { max:255 }},
     update_date:{ type:DataTypes.DATE, validate: { max:255 }},
     content: { type:DataTypes.TEXT, validate: { max: 255}
     }
-}, { freezeTableName: false, timestamps: true})
+}, { sequelize, modelName: 'Trope'})
 Trope.associate = function(models) {
-Trope.belongsTo(sequelize.define(models.Book))
+Trope.belongsTo(models.Book)
 }
-return Trope
-}
+const trope = new Trope();

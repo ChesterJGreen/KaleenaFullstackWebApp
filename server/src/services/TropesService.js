@@ -5,20 +5,19 @@ const Image = require('../models/Image.js')
 const Series = require('../models/Series.js')
 const ProgressBar = require('../models/ProgressBar.js')
 const Extra = require('../models/Extra.js')
+import { raw } from 'mysql2'
 import { tropesRepositories } from '../repositories/TropesRepositories.js'
 import { BadRequest } from '../utils/Errors.js'
 
 class TropesService {
-  async getAll(query = {}) {
+  async getAll() {
     console.log("in the service")
-    const tropes = await tropesRepositories.getAll({
-      include: [[Trope], [Quote], [Character], [Image], [Series], [ProgressBar], [Extra]]
-    })
+    const tropes = await tropesRepositories.getAll()
     return tropes
   }
   async getById(id) {
     const trope = await tropesRepositories.getById(id, {
-      include: [[Trope], [Quote], [Character], [Image], [Series], [ProgressBar], [Extra]]
+      include: [[Trope], [Quote], [Character], [Image], [Series], [ProgressBar], [Extra]], raw: true
     })
     if (trope == null ) {
       throw new BadRequest('Invalid ID')

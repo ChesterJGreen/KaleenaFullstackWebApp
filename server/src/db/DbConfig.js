@@ -1,11 +1,10 @@
-const Sequelize = require('sequelize');
+const { Sequelize } = require('sequelize');
 const db = new Sequelize(
   'kaleenas_WebsiteDB',
   'kaleenas_cjgreenie',
   'Whistlewhileyouwork#1', {
     host:'162.241.194.204',
     dialect:'mysql',
-    operatorsAliases: false
   }
 
 );

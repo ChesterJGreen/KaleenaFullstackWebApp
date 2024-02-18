@@ -1,20 +1,18 @@
+import { Sequelize } from 'sequelize';
 import { db } from '../db/DbConfig.js';
-const { QueryTypes } = require('sequelize')
 const Trope = require('../models/Trope.js')
+const sequelize = require('sequelize')
 
 class TropesRepositories {
-  async getAll(query) {
+  async getAll() {
     // const tropes = await models.Trope.findByPk(query)
     console.log("in the respostory")
-    const whatIsIt = await db.models.Trope.findAll()
-    console.log(whatIsIt)
-    const tropes = await db.models.Trope.find().toJSON()
-        return console.log(tropes)
+    const tropes = await db.models.Trope.findAll()
+    return tropes
   }
   async getById(id , query) {
-    const whatIsIt = await db.models.Trope.findAll()
-    console.log(whatIsIt)
-    const trope = await db.models.Trope.findById(id, query)
+    
+    const trope = await db.models.Trope.findByPk(id)
         return trope;
 
 }
