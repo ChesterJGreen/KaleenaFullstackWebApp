@@ -1,18 +1,18 @@
 <template>
   <div class="flex-grow-1 container-fluid bg-white">
     <div class="row">
-      <div class="col-12 my-3"></div>
-      <div class="col-12 p-0" id="HeroImg">
-        <img alt="logo" class=" w-100" src="src\assets\img\womanWalking.jpg.jpg" />
+      <div class="col-12"></div>
+      <div class="col-12 p-0">
+        <img alt="logo" width="100%" src="src\assets\img\StolenHeartfinalimageeditCropped.jpg" />
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <div class="row" id="love-story-text">
           <div class="col-5"></div>
-          <div class="col-5 offset-6" id="love-story-font">
-            <p class="text-white text-center">LIVE IN A</p>
-            <p class="text-white text-center">LOVE STORY</p>
+          <div class="col-3 mt-5" id="love-story-font">
+            <p class="text-white text-center">LIVE IN</p>
+            <p class="text-white text-center">LOVE</p>
           </div>
         </div>
       </div>
@@ -24,7 +24,61 @@
     </div>
     <div class="row">
       <div class="col-12 text-center bg-offWhite py-5">
-        <span id="FeelTheSighText">Feel the sigh and experience the fireworks.</span>
+        <span id="FeelTheSighText">Stories that will steal your heart </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 text-center my-5">
+        <div class="row mt-5">
+          <div class="col-12 mt-5">
+            <span class="cardo large-font">Hi! I'm &nbsp;&nbsp;</span><span class="dancing-script larger-font">Kaleena</span>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12">
+            <span class="cardo large-font">Author</span>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12">
+            <span class="cardo large-font">Lover of Romance</span>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12">
+            <span class="cardo large-font">Seeker of Happines</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <span class="cardo small-font"><a href="http://www.kaleenashreeve.com"><u class="pink-text">GET TO KNOW ME</u></a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mt-5">
+        <img src="src\assets\img\KaleenaPortrait.jpg" alt="" width="500">
+      </div>
+      <div class="col-4 mt-5 text-center">
+        <div class="row mt-5">
+          <div class="col-12 mt-5">
+            <span class="cardo-font large-font">If you like</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-3">
+            <span class="cardo-font large-font">enchanting stories,</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <span class="cardo-font large-font">you are in the right</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <span class="cardo-font large-font">place.</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row mt-5">
@@ -105,7 +159,10 @@ export default {
   width: 88%;
 }
 #HeroImg {
+  background-position: center center;
+  width: 100%;
   position: relative;
+  height: 25%;
 }
 #love-story-font {
   position: absolute;
@@ -183,4 +240,26 @@ export default {
     }
 
 }
+div {
+  border: 1px dotted pink;
+}
+p {
+  border: 1px solid green;
+}
+a {
+  border: 2px  solid yellow
+}
+li {
+  border: 1px dashed cyan;
+}
+img {
+  border: 1px solid purple;
+}
+span  {
+  border: 1px dashed brown;
+}
+button {
+  border: 1px dashed gray;
+}
+
 </style>
