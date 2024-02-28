@@ -3,12 +3,6 @@
     <nav class="row navbar navbar-expand-lg">
       <div class="col-12">
         <div class="row">
-          <div class="col-3 p-2 offset-9" id="SweetBites">
-            <img src="src\assets\img\Arrow.png" id="Arrow">
-            <span class="text-start rochester-font" id="SBText">Sweet Bites</span>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-2 ms-5">
             <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
               <div class="d-flex flex-column align-items-center ps-5">
@@ -21,7 +15,7 @@
               <ul class="navbar-nav justify-content-right justify-content-end">
                 <ul class="navbar-nav me-auto text-dark volk-font font-30px d-flex flex-row">
                   <div class="row ">
-                    <div class="col-9 d-flex">
+                    <div class="col-9 d-flex pt-3">
                       <Div class="row">
                       <li class="col-3">
                         <router-link :to="{ name: 'About' }" class="router btn text-dark selectable text-uppercase">
@@ -50,25 +44,27 @@
                       </li>
                     </Div>
                     </div>
-                    <div class="col-2 d-flex ms-5">
-                      <li>
-                        <a href="https://www.facebook.com/kaleena.shreeve"><img width="35"
-                            src="src\assets\img\f_logo_RGB-Black_144.png"></a>
-                      </li>
+                    <div class="col-2 d-flex ps-3 pt-3">
                       <li class="mx-2">
-                        <a href="https://www.instagram.com/kaleenashreeve1/"><img width="35"
-                            src="src\assets\img\Instagram_Glyph_Black.png"></a>
+                        <a href="https://www.instagram.com/authorkaleenashreeve/"><img width="35"
+                            src="src\assets\img\1-HomepageInstagram Button.png"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/authorkaleenashreeve"><img width="35"
+                            src="src\assets\img\1-Homepage Facebook Button.png"></a>
                       </li>
                       <li class="me-2">
-                        <a href="https://www.pinterest.com/kaleenashreeve/"><img width="35"
-                            src="src\assets\img\P-Badge-Cosmicore-Black-900.png"></a>
+                        <a href="https://www.pinterest.com/authorkaleenashreeve/"><img width="35"
+                            src="src\assets\img\1-Homepage Pinterest Button Header .png"></a>
                       </li>
-                      <li>
-                        <span class="p-1 ">
-                          <button class="btn text-white pink-button rounded-pill volk-font font-30px p-1.5 ms-3" data-toggle="modal"
-                            data-target="#newsletterModal">Newsletter</button>
-                        </span>
+                      <li class="me-2 pt-1">
+                        <a href="https://www.youtube.com/authorkaleenashreeve/"><img width="40"
+                            src="src\assets\img\1- Homepage Header YouTube Button.png"></a>
                       </li>
+                    </div>
+                    <div class="col-1">
+                      
+                      <a href="https://www.kaleenashreeve.com"><img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="200"></a>
                     </div>
                   </div>
                 </ul>
