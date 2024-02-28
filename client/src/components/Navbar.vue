@@ -11,8 +11,8 @@
         <div class="row">
           <div class="col-2 ms-5">
             <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-              <div class="d-flex flex-column align-items-center">
-                <img src="src\assets\img\1-Homepage Logo Transparent.png" class="rounded-pill w-100" alt="">
+              <div class="d-flex flex-column align-items-center ps-5">
+                <img src="src\assets\img\1-Homepage Logo Transparent.png" class="rounded-pill" height="150" alt="">
               </div>
             </router-link>
           </div>
