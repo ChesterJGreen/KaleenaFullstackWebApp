@@ -258,17 +258,45 @@
     <div class="row mt-5">
       <div class="col-12">
         <div class="row text-center">
-          <div class="col-12"><span>Sweet Bites NEWSLETTER</span></div>
-          <div class="col-12"><span>Love stories straight to your inbox</span></div>
+          <div class="col-12"><span class="rochester-font xxx-large"><b>Sweet Bites </b></span><span class="xx-large"> <b>NEWSLETTER</b></span></div>
+          <div class="col-12 mb-3"><span class="x-large">Love stories straight to your inbox</span></div>
           <div class="col-12 p-0"><img src="src\assets\img\1-Homepage Mug & Cookie Photo.png" width="100%" /></div>
-          <div class="col-12 ">
-            <ul>Books</ul>
-            <ul>Movies</ul>
-            <ul>Music</ul>
-            <ul>Self</ul>
-            <ul>God</ul>
+          <div class="col-12 large d-flex justify-content-center">
+            <ul>
+            <li class="pe-5">Books</li>
+            <li class="pe-5">Movies </li>
+            <li class="pe-5">Music </li>
+            <li class="pe-5">Self </li>
+            <li class="pe-5">God </li>
+          </ul>
+          </div>
+          <div class="col-12 input-group">
+            <div class="row">
+              <div class="col-2">
+                <img src="src\assets\img\1-Homepage Freebies Here Newsletter Button.png" width="75%" />
+              </div>
+              <div class="col-3 pt-3">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+              </div>
+              <div class="col-3 pt-3 offset-1">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Name">
+              </div>
+              <div class="col-2">
+                <button class="mistakenheart-bg rounded-75 p-2 mt-3 px-5">Send</button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <img src="" />
+        </div>
+      </div>
       </div>
     </div>
     <Footer />
@@ -408,33 +436,33 @@ export default {
 
 }
 
-// div {
-//   border: 1px dotted pink;
-// }
+div {
+  border: 1px dotted pink;
+}
 
-// p {
-//   border: 1px solid green;
-// }
+p {
+  border: 1px solid green;
+}
 
-// a {
-//   border: 2px solid yellow
-// }
+a {
+  border: 2px solid yellow
+}
 
-// li {
-//   border: 1px dashed cyan;
-// }
+li {
+  border: 1px dashed cyan;
+}
 
-// img {
-//   border: 1px solid purple;
-// }
+img {
+  border: 1px solid purple;
+}
 
-// span {
-//   border: 1px dashed brown;
-// }
+span {
+  border: 1px dashed brown;
+}
 
-// button {
-//   border: 1px dashed gray;
-// }
+button {
+  border: 1px dashed gray;
+}
 
 .mistakenheart-bg {
   background-color: #ECF5FF;
@@ -454,5 +482,8 @@ export default {
 }
 .border-pink {
   border: 2px solid #FFB4DA;
+}
+li {
+  float: left;
 }
 </style>
