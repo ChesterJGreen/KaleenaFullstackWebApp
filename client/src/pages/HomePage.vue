@@ -255,6 +255,22 @@
         </div>
       </div>
     </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="row text-center">
+          <div class="col-12"><span>Sweet Bites NEWSLETTER</span></div>
+          <div class="col-12"><span>Love stories straight to your inbox</span></div>
+          <div class="col-12 p-0"><img src="src\assets\img\1-Homepage Mug & Cookie Photo.png" width="100%" /></div>
+          <div class="col-12 ">
+            <ul>Books</ul>
+            <ul>Movies</ul>
+            <ul>Music</ul>
+            <ul>Self</ul>
+            <ul>God</ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>

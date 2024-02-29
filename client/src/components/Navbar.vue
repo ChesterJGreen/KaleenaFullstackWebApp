@@ -17,24 +17,19 @@
                   <div class="row ">
                     <div class="col-9 d-flex pt-3">
                       <Div class="row">
-                      <li class="col-3">
+                      <li class="col-4">
                         <router-link :to="{ name: 'About' }" class="router btn text-dark selectable text-uppercase">
                           About Me
                         </router-link>
                       </li>
-                      <li class="col-2">
+                      <li class="col-3">
                         <router-link :to="{ name: 'Books' }" class="router btn text-dark selectable text-uppercase">
                           Books
                         </router-link>
                       </li>
                       <li class="col-3">
-                        <router-link :to="{ name: 'Journeys' }" class="router btn text-dark selectable text-uppercase">
-                          Journeys
-                        </router-link>
-                      </li>
-                      <li class="col-2">
-                        <router-link :to="{ name: 'Blog' }" class="router btn text-dark selectable text-uppercase">
-                          Blog
+                        <router-link :to="{ name: 'Extras' }" class="router btn text-dark selectable text-uppercase">
+                          Extras
                         </router-link>
                       </li>
                       <li class="col-2">
@@ -58,7 +53,7 @@
                             src="src\assets\img\1-Homepage Pinterest Button Header .png"></a>
                       </li>
                       <li class="me-2 pt-1">
-                        <a href="https://www.youtube.com/authorkaleenashreeve/"><img width="40"
+                        <a href="https://www.youtube.com/"><img width="40"
                             src="src\assets\img\1- Homepage Header YouTube Button.png"></a>
                       </li>
                     </div>

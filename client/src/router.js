@@ -33,6 +33,11 @@ const routes = [
     component: loadPage('JourneyPage')
   },
   {
+    path: '/extras',
+    name: 'Extras',
+    component: loadPage('ExtrasPage')
+  },
+  {
     path: '/blog',
     name: 'Blog',
     component: loadPage('BlogPage')
