@@ -153,7 +153,8 @@
           <div class="col-10 text-center">
             <div class="row">
               <div class="col-2 offset-6">
-                <span class="cardo-font small"><a href="http://www.kaleenashreeve.com"><u class="pink-text">READ MORE</u></a></span>
+                <span class="cardo-font small"><a href="http://www.kaleenashreeve.com"><u class="pink-text">READ
+                      MORE</u></a></span>
 
               </div>
             </div>
@@ -161,7 +162,7 @@
           <div class="col-2"><button class="rounded-pill p-2">Buy on Amazon</button></div>
         </div>
 
-        </div>
+      </div>
       <div class="col-4">
         <div class="row">
           <div class="col-8">
@@ -182,6 +183,73 @@
                   <div class="col-12"><span>eBook has links</span></div>
                   <div class="col-12"><span>with the same.</span></div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mistakenheart-bg">
+      <div class="col-12 mb-2">
+        <div class="row">
+          <div class="col-6 mt-4 p-2">
+            <div class="row">
+              <div class="col-10 offset-1 pe-5">
+                <p class="progress-bar-bg">
+                <div class="row px-4 bg-white rounded-75 border-pink p-4">
+                  <div class="col-9 text-center x-large">
+                    <span><b>Books Progress Bar</b></span>
+                  </div>
+                  <div class="col-12">
+                    <span class="small">Christmas Novel</span>
+                  </div>
+                  <div class="col-6">
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped" style="width: 75%">75%</div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <span class="small">Secret Heart -- Lonely Cowboy Hearts Book 2</span>
+                  </div>
+                  <div class="col-6">
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped" style="width: 25%">25%</div>
+                    </div>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 mt-4">
+            <div class="row text-center">
+              <div class="col-12">
+                <span class="xx-large">Mistletoe Wishes & Gingerbread Kisses</span>
+              </div>
+              <div class="col-12 text-center">
+                <img src="src\assets\img\1-Homepage Heart Divider.png" width="600" />
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-4 offset-6">
+                    <img src="src\assets\img\1-Homepage Mistletoe Icon Tilted Right.png" width="50" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <span class="x-large">Coming October 2024!</span>
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-4 offset-1">
+                    <img src="src\assets\img\1-HomepageGingerbread Man Icon Tilted Left .png" width="50" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="rounded-pill p-1"><a href="">Updates Here</a></button>
               </div>
             </div>
           </div>
@@ -325,34 +393,51 @@ export default {
 
 }
 
-div {
-  border: 1px dotted pink;
-}
+// div {
+//   border: 1px dotted pink;
+// }
 
-p {
-  border: 1px solid green;
-}
+// p {
+//   border: 1px solid green;
+// }
 
-a {
-  border: 2px solid yellow
-}
+// a {
+//   border: 2px solid yellow
+// }
 
-li {
-  border: 1px dashed cyan;
-}
+// li {
+//   border: 1px dashed cyan;
+// }
 
-img {
-  border: 1px solid purple;
-}
+// img {
+//   border: 1px solid purple;
+// }
 
-span {
-  border: 1px dashed brown;
-}
+// span {
+//   border: 1px dashed brown;
+// }
 
-button {
-  border: 1px dashed gray;
-}
+// button {
+//   border: 1px dashed gray;
+// }
 
 .mistakenheart-bg {
   background-color: #ECF5FF;
-}</style>
+}
+.progress-bar-color {
+  background-color: #FFB4DA;
+  color: #333333;
+}
+.progress-bar-bg {
+  background-image: url('src\assets\img\1-Homepage Books Progress Bar Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.rounded-75 {
+  border-radius: 35px;
+}
+.border-pink {
+  border: 2px solid #FFB4DA;
+}
+</style>
