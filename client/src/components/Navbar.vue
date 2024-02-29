@@ -121,19 +121,4 @@ button {
   left: 5.25em;
   font-size: xx-large;
 }
-div {
-  border: 1px dotted pink;
-}
-p {
-  border: 1px solid green;
-}
-a {
-  border: 2px  solid yellow
-}
-li {
-  border: 1px dashed cyan;
-}
-img {
-  border: 1px solid purple;
-}
 </style>

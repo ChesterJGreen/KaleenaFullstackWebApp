@@ -9,9 +9,9 @@
                     <div class="col-6 p-5 text-center">
                         <div class="row">
                             <div class="col-12 pt-5" id="SweetBites">
-                                <p class="ThanksText cardo-font">Thanks for stopping by!</p>
+                                <p class="cardo-font">Thanks for stopping by!</p>
                                 <p>Let's keep in touch</p>
-                                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button Footer.png" width="300">
+                                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button Footer.png" width="250">
                             </div>
                         </div>
                     </div>
