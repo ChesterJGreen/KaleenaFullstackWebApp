@@ -4,22 +4,19 @@
             <div class="col-10 offset-1 pinkBorder">
                 <div class="row">
                     <div class="col-3 p-5">
-                        <img src="src\assets\img\LogoTransparentEnlargedCropped.png" width="300">
+                        <img src="src\assets\img\1-Homepage Logo Transparent.png" width="200">
                     </div>
                     <div class="col-6 p-5 text-center">
                         <div class="row">
                             <div class="col-12 pt-5" id="SweetBites">
                                 <p class="ThanksText cardo-font">Thanks for stopping by!</p>
-                                <button class="btn rounded p-4 keepInTouch cardo-font" data-toggle="modal"
-                                    data-target="#newsletterModal">Let's keep in touch</button>
-                                <img src="src\assets\img\Arrow.png" id="Arrow">
-                                <p id="SBText" class="rochester-font">Sweet Bites</p>
-                                <p id="NewsLetter" class="volk-font">Newsletter</p>
+                                <p>Let's keep in touch</p>
+                                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button Footer.png" width="300">
                             </div>
                         </div>
                     </div>
                     <div class="col-3 pt-5">
-                        <img src="src\assets\img\StampPic.png">
+                        <img src="src\assets\img\1-HomepageEnvelope Stamp Footer.png" width="100">
                     </div>
                 </div>
             </div>
@@ -28,22 +25,26 @@
             <div class="col-12">
                 <ul class="navbar justify-content-center justify-content-end">
                     <ul>
-                        <a href="https://www.facebook.com/kaleena.shreeve"><img width="25"
-                                src="src\assets\img\f_logo_RGB-Black_144.png"></a>
+                        <a href="https://www.facebook.com/authorkaleenashreeve"><img width="25"
+                                src="src\assets\img\1-Homepage Facebook Button.png"></a>
                     </ul>
                     <ul>
-                        <a href="https://www.instagram.com/kaleenashreeve1/"><img width="25"
-                                src="src\assets\img\Instagram_Glyph_Black.png"></a>
+                        <a href="https://www.instagram.com/authorkaleenashreeve/"><img width="25"
+                                src="src\assets\img\1-HomepageInstagram Button.png"></a>
                     </ul>
                     <ul>
-                        <a href="https://www.instagram.com/kaleenashreeve1/"><img width="25"
-                                src="src\assets\img\PinterestLogo.png"></a>
+                        <a href="https://www.pinterest.com/authorkaleenashreeve/"><img width="25"
+                                src="src\assets\img\1-Homepage Pinterest Button Header .png"></a>
+                    </ul>
+                    <ul>
+                        <a href="https://www.youtube.com"><img width="25"
+                                src="src\assets\img\1- Homepage Header YouTube Button.png"></a>
                     </ul>
                 </ul>
             </div>
         </div>
-        <div class="row footer-text volk-font">
-            <div class="col-9 offset-1">
+        <div class="row volk-font x-large">
+            <div class="col-8 offset-2">
                 <div class="row">
                     <ul class="col-2 offset-2 text-end">
                         <router-link :to="{ name: 'About' }" class="text-dark selectable text-uppercase">
@@ -55,14 +56,9 @@
                             Books
                         </router-link>
                     </ul>
-                    <ul class="col-1">
-                        <router-link :to="{ name: 'Journeys' }" class=" text-dark selectable text-uppercase">
-                            Extras
-                        </router-link>
-                    </ul>
                     <ul class="col-2 text-center">
-                        <router-link :to="{ name: 'Blog' }" class="text-dark selectable text-uppercase">
-                            Blog
+                        <router-link :to="{ name: 'Extras' }" class="text-dark selectable text-uppercase">
+                            Extras
                         </router-link>
                     </ul>
                     <ul class="col-1">
@@ -73,7 +69,7 @@
                 </div>
             </div>
             <div class="col-2">
-                <span class="copyright-text">© 2023 Kaleena Shreeve</span>
+                <span class="large">© 2023 Kaleena Shreeve</span>
             </div>
         </div>
 

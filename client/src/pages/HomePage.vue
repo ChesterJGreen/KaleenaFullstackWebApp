@@ -289,12 +289,31 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row mistakenheart-bg">
       <div class="col-12">
         <div class="row">
-        <div class="col-8"></div>
-        <div class="col-4">
-          <img src="" />
+        <div class="col-8">
+          <div class="row text-center">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-2">
+                  <img src="src\assets\img\2-About Me Page 6 Secrets Heart tilted right.png" width="100%" >
+                </div>
+                <div class="col-10 pt-4 ">
+                  <span class="rochester-font xxx-large">Extras you won’t get anywhere else </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <img src="src\assets\img\1-Homepage Heart Divider.png" width="100%" >
+            </div>
+            <div class="col-12"><span>Deleted Scenes • Playlist •  Story Map</span></div>
+            <div class="col-12"><span> Did You Know . . .</span></div>
+            <div class="col-12"><a>Extras Here</a></div>
+          </div>
+        </div>
+        <div class="col-4 p-0 ps-5">
+          <img src="src\assets\img\1- Homepage Woman Drinking From Mug .png" width="100%" />
         </div>
       </div>
       </div>
