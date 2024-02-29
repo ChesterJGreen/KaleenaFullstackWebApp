@@ -29,8 +29,7 @@
       <div class="col-4 text-center my-5">
         <div class="row mt-5">
           <div class="col-12 mt-5">
-            <span class="cardo-font large-font">Hi! I'm &nbsp;&nbsp;</span><span
-              class="dancing-script larger-font">author</span>
+            <span class="cardo-font large-font">Hi! I'm author</span>
           </div>
         </div>
         <div class="row my-3 text-start">
@@ -90,8 +89,8 @@
       </div>
     </div>
     <div class="row mistakenheart-bg">
-      <div class="col-12">
-        <div class="row mt-4 mb-4 ms-5 me-5 bg-white">
+      <div class="col-10 offset-1">
+        <div class="row m-5 bg-white rounded-75">
           <div class="col-4 text-center ">
             <div class="row">
               <div class="col-12 pt-5">
