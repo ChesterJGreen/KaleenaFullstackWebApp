@@ -22,7 +22,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-center bg-offWhite py-5">
-        <span id="FeelTheSighText">Stories that will steal your heart </span>
+        <span class="xxx-large prata-text">Stories that will steal your heart </span>
       </div>
     </div>
     <div class="row">
@@ -34,12 +34,12 @@
         </div>
         <div class="row my-3 text-start">
           <div class="col-6 offset-3 ps-5">
-            <span class="rochester-font xxx-large">Kaleena</span>
+            <span class="playlist-font xxx-large">Kaleena</span>
           </div>
         </div>
         <div class="row my-3">
           <div class="col-6 offset-4">
-            <span class="rochester-font xxx-large">Shreeve</span>
+            <span class="playlist-font xxx-large">Shreeve</span>
           </div>
         </div>
 
@@ -61,17 +61,17 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large"><span class="rochester-font xx-large">books</span> and signup for</span>
+            <span class="cardo-font x-large"><span class="playlist-font xx-large">books</span> and signup for</span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large">my suggested <span class="rochester-font xx-large">movies</span> </span>
+            <span class="cardo-font x-large">my suggested <span class="playlist-font xx-large">movies</span> </span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large">and <span class="rochester-font xx-large">music</span> list on all</span>
+            <span class="cardo-font x-large">and <span class="playlist-font xx-large">music</span> list on all</span>
           </div>
         </div>
         <div class="row">
@@ -124,19 +124,19 @@
       <div class="col-8">
         <div class="row">
           <div class="col-12 text-center mt-5">
-            <span class="rochester-font xxx-large">Lonely Cowboy Hearts Series</span>
+            <span class="playlist-font xxx-large">Lonely Cowboy Hearts Series</span>
           </div>
           <div class="col-12 text-center">
             <img src="src\assets\img\1-Homepage Heart Divider.png" width="400" />
           </div>
         </div>
-        <div class="col-12 text-center mt-3">
+        <div class="col-12 text-center mt-3 volk-font">
           <span class="x-large"><b>Gavin is a lonely cowboy.</b></span>
         </div>
-        <div class="col-12 text-center mt-2">
+        <div class="col-12 text-center mt-2 volk-font">
           <span class="x-large "><b>Sarah needs a fresh start.</b></span>
         </div>
-        <div class="col-12 text-center mt-3">
+        <div class="col-12 text-center mt-3 prata-font">
           <span class="large ">An accidental marriage ropes them together,</span>
         </div>
         <div class="col-12 text-center">
@@ -205,7 +205,8 @@
                   <div class="col-6">
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                       aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped" style="width: 75%">75%</div>
+                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped"
+                        style="width: 75%">75%</div>
                     </div>
                   </div>
                   <div class="col-12 mt-2">
@@ -214,7 +215,8 @@
                   <div class="col-6">
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                       aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped" style="width: 25%">25%</div>
+                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped"
+                        style="width: 25%">25%</div>
                     </div>
                   </div>
                 </div>
@@ -258,22 +260,23 @@
     <div class="row mt-5">
       <div class="col-12">
         <div class="row text-center">
-          <div class="col-12"><span class="rochester-font xxx-large"><b>Sweet Bites </b></span><span class="xx-large"> <b>NEWSLETTER</b></span></div>
+          <div class="col-12"><span class="playlist-font xxx-large"><b>Sweet Bites </b></span><span class="xx-large">
+              <b>NEWSLETTER</b></span></div>
           <div class="col-12 mb-3"><span class="x-large">Love stories straight to your inbox</span></div>
           <div class="col-12 p-0"><img src="src\assets\img\1-Homepage Mug & Cookie Photo.png" width="100%" /></div>
           <div class="col-12 large d-flex justify-content-center">
             <ul>
-            <li class="pe-5">Books</li>
-            <li class="pe-5">Movies </li>
-            <li class="pe-5">Music </li>
-            <li class="pe-5">Self </li>
-            <li class="pe-5">God </li>
-          </ul>
+              <li class="pe-5">Books</li>
+              <li class="pe-5">Movies </li>
+              <li class="pe-5">Music </li>
+              <li class="pe-5">Self </li>
+              <li class="pe-5">God </li>
+            </ul>
           </div>
           <div class="col-12 input-group">
-            <div class="row">
+            <div class="row mb-3">
               <div class="col-2">
-                <img src="src\assets\img\1-Homepage Freebies Here Newsletter Button.png" width="75%" />
+                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="75%" />
               </div>
               <div class="col-3 pt-3">
                 <input type="text" class="form-control" placeholder="Name" aria-label="Name">
@@ -282,7 +285,26 @@
                 <input type="text" class="form-control" placeholder="Email" aria-label="Name">
               </div>
               <div class="col-2">
-                <button class="mistakenheart-bg rounded-75 p-2 mt-3 px-5">Send</button>
+                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">Send</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Your first email is on the way.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -292,30 +314,30 @@
     <div class="row mistakenheart-bg">
       <div class="col-12">
         <div class="row">
-        <div class="col-8">
-          <div class="row text-center">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-2">
-                  <img src="src\assets\img\2-About Me Page 6 Secrets Heart tilted right.png" width="100%" >
-                </div>
-                <div class="col-10 pt-4 ">
-                  <span class="rochester-font xxx-large">Extras you won’t get anywhere else </span>
+          <div class="col-8">
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="src/assets/img/3A-Tilted Sun Heart.png" width="100%">
+                  </div>
+                  <div class="col-10 pt-4 ">
+                    <span class="playlist-font xxx-large">Extras you won’t get anywhere else </span>
+                  </div>
                 </div>
               </div>
+              <div class="col-12">
+                <img src="src\assets\img\1-Homepage Heart Divider.png" width="100%">
+              </div>
+              <div class="col-12"><span>Deleted Scenes • Playlist • Story Map</span></div>
+              <div class="col-12"><span> Did You Know . . .</span></div>
+              <div class="col-12"><a>Extras Here</a></div>
             </div>
-            <div class="col-12">
-              <img src="src\assets\img\1-Homepage Heart Divider.png" width="100%" >
-            </div>
-            <div class="col-12"><span>Deleted Scenes • Playlist •  Story Map</span></div>
-            <div class="col-12"><span> Did You Know . . .</span></div>
-            <div class="col-12"><a>Extras Here</a></div>
+          </div>
+          <div class="col-4 p-0 ps-5">
+            <img src="src\assets\img\1- Homepage Woman Drinking From Mug .png" width="100%" />
           </div>
         </div>
-        <div class="col-4 p-0 ps-5">
-          <img src="src\assets\img\1- Homepage Woman Drinking From Mug .png" width="100%" />
-        </div>
-      </div>
       </div>
     </div>
     <Footer />
@@ -455,54 +477,58 @@ export default {
 
 }
 
-div {
-  border: 1px dotted pink;
-}
+// div {
+//   border: 1px dotted pink;
+// }
 
-p {
-  border: 1px solid green;
-}
+// p {
+//   border: 1px solid green;
+// }
 
-a {
-  border: 2px solid yellow
-}
+// a {
+//   border: 2px solid yellow
+// }
 
-li {
-  border: 1px dashed cyan;
-}
+// li {
+//   border: 1px dashed cyan;
+// }
 
-img {
-  border: 1px solid purple;
-}
+// img {
+//   border: 1px solid purple;
+// }
 
-span {
-  border: 1px dashed brown;
-}
+// span {
+//   border: 1px dashed brown;
+// }
 
-button {
-  border: 1px dashed gray;
-}
+// button {
+//   border: 1px dashed gray;
+// }
 
 .mistakenheart-bg {
   background-color: #ECF5FF;
 }
+
 .progress-bar-color {
   background-color: #FFB4DA;
   color: #333333;
 }
+
 .progress-bar-bg {
   background-image: url('src\assets\img\1-Homepage Books Progress Bar Background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+
 .rounded-75 {
   border-radius: 35px;
 }
+
 .border-pink {
   border: 2px solid #FFB4DA;
 }
+
 li {
   float: left;
-}
-</style>
+}</style>

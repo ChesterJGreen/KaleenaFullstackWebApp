@@ -15,7 +15,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 pt-5">
+                    <div class="col-2 offset-1 pt-5 ps-5">
                         <img src="src\assets\img\1-HomepageEnvelope Stamp Footer.png" width="100">
                     </div>
                 </div>
