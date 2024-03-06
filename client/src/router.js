@@ -28,19 +28,14 @@ const routes = [
     component: loadPage('BookPage')
   },
   {
-    path: '/journeys',
-    name: 'Journeys',
-    component: loadPage('JourneyPage')
-  },
-  {
     path: '/extras',
     name: 'Extras',
     component: loadPage('ExtrasPage')
   },
   {
-    path: '/blog',
-    name: 'Blog',
-    component: loadPage('BlogPage')
+    path: '/landing-page',
+    name: 'Landing Page',
+    component: loadPage('LandingPage')
   },
   {
     path: '/contact',

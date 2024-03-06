@@ -44,7 +44,7 @@
                         <a href="https://www.instagram.com/authorkaleenashreeve/"><img width="35"
                             src="src\assets\img\1-HomepageInstagram Button.png"></a>
                       </li>
-                      <li>
+                      <li class="me-2">
                         <a href="https://www.facebook.com/authorkaleenashreeve"><img width="35"
                             src="src\assets\img\1-Homepage Facebook Button.png"></a>
                       </li>
