@@ -7,11 +7,11 @@ class BooksRepositories {
     // const books = await models.Book.findByPk(query)
     console.log("in the respostory")
     // const dude = await db.models.Book.
-    const books = await db.models.Book.find().toJSON()
+    const books = await db.models.Book.findAll(query)
         return console.log(books)
   }
   async getById(id , query) {
-    const book = await db.models.Book.findById(id, query)
+    const book = await db.models.Book.findByPk(id, query)
         return book;
 
 }

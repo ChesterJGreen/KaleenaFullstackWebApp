@@ -1,17 +1,19 @@
+import { SELECT } from 'sequelize/types/query-types.js';
 import { db } from '../db/DbConfig.js';
-const { QueryTypes } = require('sequelize')
+const { QueryTypes, Sequelize } = require('sequelize')
 const Email = require('../models/Email.js')
 
 class EmailsRepositories {
-  async getAll(query) {
-    // const emails = await models.Email.findByPk(query)
+  async getAll() {
+    const emails = await db.Sequelize.Email.findByPk(query)
     console.log("in the respostory")
     // const dude = await db.models.Email.
-    const emails = await db.models.Email.find().toJSON()
-        return console.log(emails)
+    const emails = await db.models.Email;
+    console.log("these are the emails" + emails)
+        return {"stuff": "so we've got"}
   }
-  async getById(id , query) {
-    const email = await db.models.Email.findById(id, query)
+  async getById(id) {
+    const email = await db.models.Email.findByPk(id)
         return email;
 
 }
