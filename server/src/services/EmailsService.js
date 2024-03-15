@@ -9,11 +9,10 @@ class EmailsService {
   }
   async getById(id) {
     const email = await emailsRepositories.getById(id)
-    console.log(" this is what the email is" + email)
     if (email == null ) {
       throw new BadRequest('Invalid ID')
     }
-    return email
+    return email;
   }
   async create(body) {
     const email = await emailsRepositories.create(body)
@@ -26,8 +25,8 @@ class EmailsService {
     }
     return email
   }
-  async destroy(id, userId) {
-    const email = await emailsRepositories.findOneAndUpdate({ _id: id, creatorID: userId})
+  async destroy(id) {
+    const email = await emailsRepositories.delete(id)
     if (email == null) {
       throw new BadRequest('Invalid Id')
     }

@@ -6,8 +6,8 @@ class EmailsRepositories {
         return emails
   }
   async getById(id) {
-    const email = await Email.findByPk(id)
-        return email;
+    const email = await Email.findAll( { where: {id}})
+    return (email);
   }
   async create(body) {
     await Email.create(body)
@@ -16,9 +16,11 @@ class EmailsRepositories {
   findByIdAndUpdate(id, body, arg2) {
     throw new Error('Method not implemented.');
   }
-  findOneAndUpdate(arg0) {
-    throw new Error('Method not implemented.');
+  async delete(id) {
+    Email.destroy({
+      where: { 
+        id: id}})
+        return
   }
-
 }
 export const emailsRepositories = new EmailsRepositories()

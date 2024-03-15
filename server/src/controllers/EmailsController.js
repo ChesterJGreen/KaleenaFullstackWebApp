@@ -43,7 +43,6 @@ export class EmailsController extends BaseController {
    */
   async getById(request, response, next) {
     try {
-      console.log(request.params.id)
       const email = emailsService.getById(request.params.id)
       response.send(email)
     } catch (error) {
@@ -64,7 +63,7 @@ export class EmailsController extends BaseController {
   }
   async edit(request, response, next) {
     try {
-      request.body.creatorId = request.userInfo.id
+      // request.body.creatorId = request.userInfo.id
       request.body.id = request.params.id
       const email = emailsService.edit(request.body)
       response.send(email)
@@ -74,9 +73,9 @@ export class EmailsController extends BaseController {
   }
   async destroy(request, response, next) {
     try {
-      request.body.creatorId = request.userInfo.id
-      const email = emailsService.destroy(request.params.id, request.userInfo.id)
-      response.send(email)
+      // request.body.creatorId = request.userInfo.id
+      const email = emailsService.destroy(request.params.id)
+      response.status(200)
     } catch (error) {
       next(error)
     }
