@@ -1,18 +1,12 @@
-const { Sequelize } = require("sequelize");
-const sequelize = new Sequelize('sqlite::memory')
-const db = require('../db/DbConfig.js')
-module.exports = (sequelize, DataTypes) => {
+const { Sequelize, DataTypes } = require("sequelize");
 
- const Email = db.db.define("emails", {
-       id:{ type: DataTypes.INTEGER , primaryKey:true, autoIncrement: true, allowNull: false, unique:true },
-       create_date:{ type:DataTypes.DATE, validate: { max:255 }},
-       update_date:{ type:DataTypes.DATE, validate: { max:255 }},
-       email: { type:DataTypes.STRING, validate: {max:255}},
-       name: { type:DataTypes.STRING, validate: {max:255}},
-       unsubscribe: { type:DataTypes.ENUM('true', 'false'), validate: {max:255}}
-      }, { freezeTableName: false, timestamps: true });
-      module.exports = Email
-    }
-{
-   db.db.models.Email.has(sequelize.define(models.Name))
+module.exports = (sequelize) => {
+   return sequelize.define('emails', {
+      id: { type: DataTypes.INTEGER, primaryKey: true, allowNull: false, autoIncrement: true},
+      email: { type: DataTypes.STRING, validate: {max:255}, allowNull: false},
+      name: { type: DataTypes.STRING, validate: {max: 255}, allowNull: false},
+      unsubscribe: { type: DataTypes.BOOLEAN, defaultValue: false, allowNull: false},
+      isValidated: { type: DataTypes.BOOLEAN, defaultValue: false, allowNull: false}
+
+}, { freezeTableName: true, timestamps: true});
 }

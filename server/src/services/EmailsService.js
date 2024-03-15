@@ -1,11 +1,10 @@
 
-import Name from '../models/Name.js'
 import { emailsRepositories } from '../repositories/EmailsRepositories.js'
 import { BadRequest } from '../utils/Errors'
 
 class EmailsService {
-  async getAll(query = {}) {
-    console.log("in the service, i swear")
+  async getAll() {
+    console.log("in the service")
     const emails = await emailsRepositories.getAll()
     return emails
   }
@@ -18,7 +17,7 @@ class EmailsService {
   }
   async create(body) {
     const email = await emailsRepositories.create(body)
-    return await emailsRepositories.getById()
+    return emailsRepositories.getById(body.id)
   }
   async edit(body) {
     const email = await emailsRepositories.findByIdAndUpdate(body.id, body, {new: true, runValidators: true})

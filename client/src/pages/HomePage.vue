@@ -2,7 +2,7 @@
   <div class="flex-grow-1 container-fluid bg-white">
     <div class="row">
       <div class="col-12 p-0">
-        <img alt="logo" width="100%" src="src\assets\img\StolenHeartfinalimageeditCropped.jpg" />
+        <img alt="logo" width="100%" src="src\assets\img\StolenHeartfinalimageedit.jpeg" />
       </div>
     </div>
     <div class="row">

@@ -1,7 +1,6 @@
 import { Auth0Provider } from '@bcwdev/auth0provider'
 import { emailsService } from '../services/EmailsService.js'
 import BaseController from '../utils/BaseController'
-import { db } from '../db/DbConfig.js'
 
 export class EmailsController extends BaseController {
   constructor() {
@@ -26,13 +25,13 @@ export class EmailsController extends BaseController {
    */
   async getAll(request, response, next) {
     try {
-      // const endEmail = await db.models.Email.findAll()
+      console.log("int the controller")
       const emails = await emailsService.getAll()
-      // console.log(endEmail)
       response.send(emails)
       return emails
 
     } catch (error) {
+      console.log(error + "This is the error from the controller")
       next(error)
     }
   }
