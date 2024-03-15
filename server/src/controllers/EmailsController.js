@@ -25,7 +25,6 @@ export class EmailsController extends BaseController {
    */
   async getAll(request, response, next) {
     try {
-      console.log("int the controller")
       const emails = await emailsService.getAll()
       response.send(emails)
       return emails
@@ -44,6 +43,7 @@ export class EmailsController extends BaseController {
    */
   async getById(request, response, next) {
     try {
+      console.log(request.params.id)
       const email = emailsService.getById(request.params.id)
       response.send(email)
     } catch (error) {
@@ -55,7 +55,7 @@ export class EmailsController extends BaseController {
   async create(request, response, next) {
     try {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
-      request.body.creatorId = request.userInfo.id
+      // request.body.creatorId = request.userInfo.id
       const email = await emailsService.create(request.body)
       response.send(email)
     } catch (error) {

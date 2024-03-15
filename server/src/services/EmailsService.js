@@ -4,12 +4,12 @@ import { BadRequest } from '../utils/Errors'
 
 class EmailsService {
   async getAll() {
-    console.log("in the service")
     const emails = await emailsRepositories.getAll()
     return emails
   }
   async getById(id) {
     const email = await emailsRepositories.getById(id)
+    console.log(" this is what the email is" + email)
     if (email == null ) {
       throw new BadRequest('Invalid ID')
     }

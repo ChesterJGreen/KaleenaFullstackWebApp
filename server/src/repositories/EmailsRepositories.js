@@ -2,17 +2,16 @@ const {Email} = require('../db/DbConfig.js')
 
 class EmailsRepositories {
   async getAll() {
-    console.log("in the controller ")
     const emails = Email.findAll()
         return emails
   }
   async getById(id) {
     const email = await Email.findByPk(id)
         return email;
-
-}
+  }
   async create(body) {
-    const newEmail = await Email.create(body)
+    await Email.create(body)
+    return
   }
   findByIdAndUpdate(id, body, arg2) {
     throw new Error('Method not implemented.');
