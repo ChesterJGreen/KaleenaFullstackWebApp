@@ -56,7 +56,7 @@ export class EmailsController extends BaseController {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
       // request.body.creatorId = request.userInfo.id
       const email = await emailsService.create(request.body)
-      response.send(email)
+      response.json(email)
     } catch (error) {
       next(error)
     }

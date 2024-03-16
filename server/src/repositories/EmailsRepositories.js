@@ -6,7 +6,7 @@ class EmailsRepositories {
         return emails
   }
   async getById(id) {
-    const email = await Email.findAll( { where: {id}})
+    const email = await Email.findByPk(id)
     return (email);
   }
   async create(body) {
