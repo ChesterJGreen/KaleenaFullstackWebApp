@@ -1,13 +1,13 @@
+const DbConfig = require('../../src/config.js').database.db
 const { Sequelize }  = require('sequelize')
 const sequelize = new Sequelize('sqlite::memory:')
 const EmailModel = require('../models/Email.js')
 
-const databaseConnection = new Sequelize(
-  'kaleenas_WebsiteDB',
-  'kaleenas_cjgreenie',
-  'Whistlewhileyouwork#1', {
-    host:'162.241.194.204',
-    dialect:'mysql',
+const databaseConnection = new Sequelize(DbConfig.name, DbConfig.user, DbConfig.password, {
+    dialect: DbConfig.dialect,
+    host: DbConfig.host,
+    port: DbConfig.port,
+    define: { timestamps: false}
   },
   
 );
