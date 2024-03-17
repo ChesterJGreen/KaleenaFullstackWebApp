@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-center bg-offWhite py-5">
-        <span class="xxx-large prata-text">Stories that will steal your heart </span>
+        <span class="xxx-large prata-font">Stories that will steal your heart </span>
       </div>
     </div>
     <div class="row">
@@ -274,26 +274,29 @@
               <div class="col-2">
                 <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="75%" />
               </div>
+              <form @submit="createEmail">
+              <div class="form-group ">
               <div class="col-3 pt-3">
-                <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                <input type="text" class="form-control" v-model="state.rawEmail.name" placeholder="Name" aria-label="Name">
               </div>
               <div class="col-3 pt-3 offset-1">
-                <input type="text" class="form-control" placeholder="Email" aria-label="Name">
+                <input type="text" class="form-control" v-model="state.rawEmail.email" required placeholder="Email" aria-label="Name">
               </div>
               <div class="col-2">
-                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">Send</button>
+                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5"
+                  data-bs-target="#createEmail">Send</button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Email Submitted</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        Your first email is on the way.
+                        <p>Thank you so much for subscribing to my "Sweet Bites" Newsletter!</p>
+                        <p>Kaleena is still cooking up the newsletter and it will be hitting your inbox as soon as is it ready.</p>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -302,6 +305,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </form>
             </div>
           </div>
         </div>
@@ -341,10 +346,26 @@
 </template>
 
 <script>
+import { reactive } from 'vue';
+import Pop from '../utils/Pop';
+
 export default {
   name: "Home",
   setup() {
+    const state = reactive({
+      rawEmail: {}
+    })
     return {
+      state,
+      async createEmail() {
+        try {
+          await emailsService.createEmail(state.rawEmail)
+          state.rawEmail = {}
+          Pop.toast('Email Accepted', 'success')
+        } catch (error) {
+          Pop.toast(error, 'error')
+        }
+      }
     }
   }
 }
