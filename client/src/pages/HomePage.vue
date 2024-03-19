@@ -274,8 +274,6 @@
               <div class="col-2">
                 <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="75%" />
               </div>
-              <form @submit="createEmail">
-              <div class="form-group ">
               <div class="col-3 pt-3">
                 <input type="text" class="form-control" v-model="state.rawEmail.name" placeholder="Name" aria-label="Name">
               </div>
@@ -283,8 +281,7 @@
                 <input type="text" class="form-control" v-model="state.rawEmail.email" required placeholder="Email" aria-label="Name">
               </div>
               <div class="col-2">
-                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5"
-                  data-bs-target="#createEmail">Send</button>
+                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5" @click="createEmail()" data-bs-target="#createEmail">Send</button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -303,10 +300,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
-          </form>
             </div>
           </div>
         </div>
@@ -348,6 +343,7 @@
 <script>
 import { reactive } from 'vue';
 import Pop from '../utils/Pop';
+import { emailsService } from '../services/EmailsService';
 
 export default {
   name: "Home",

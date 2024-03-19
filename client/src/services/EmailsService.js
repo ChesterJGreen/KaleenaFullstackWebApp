@@ -6,7 +6,7 @@ import { api } from './AxiosService'
 class EmailsService {
   async createEmail(rawEmail) {
     try {
-      const res = await api.post('api/emails', rawEmail)
+      const res = await api.post('/api/emails', rawEmail)
       AppState.email = new Email(res.data)
     } catch (err) {
       logger.error('HAVE YOU STARTED YOUR SERVER YET???', err)
