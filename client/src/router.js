@@ -41,8 +41,8 @@ const routes = [
       { path: 'qr3c', name: 'QR3C', component: loadPage('QR3CPage') },
       { path: 'qr19a', name: 'QR19A',component: loadPage('QR19APage') },
       { path: 'qr10pip', name: 'QR10PIP', component: loadPage('QR10PIPPage') },
+      { path: 'qr11th', name: 'QR11TH', component: loadPage('QR11THPage') },
       { path: '/qr21fy', component: loadPage('QR21FYPage') },
-      { path: '/qr11th', component: loadPage('QR11THPage') },
       { path: '/qr12d', component: loadPage('QR12DPage') },
       { path: '/qr2gh', component: loadPage('QR2GHPage') }
     ]
