@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 offset-2 volk-font mt-3 px-5">
+            <div class="col-8 offset-2 volk-font mt-3 px-5 text-center">
                 <h5>
                     <p class="px-5">I listened to Dierks Bentley sing this in his home town.
                         It was my first concert in the pit and I loved the intensity of the music
