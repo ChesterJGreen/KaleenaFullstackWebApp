@@ -38,9 +38,9 @@ const routes = [
     component: loadPage('MSSPPage'),
     children: [
       { path: 'qr18wh', name: 'QR18WH', component: loadPage('QR18WHPage') },
+      { path: 'qr3c', name: 'QR3C', component: loadPage('QR3CPage') },
       { path: '/qr21fy', component: loadPage('QR21FYPage') },
       { path: '/qr19a', component: loadPage('QR19APage') },
-      { path: '/qr3c', component: loadPage('QR3CPage') },
       { path: '/qr10pip', component: loadPage('QR10PIPPage') },
       { path: '/qr11th', component: loadPage('QR11THPage') },
       { path: '/qr12d', component: loadPage('QR12DPage') },
