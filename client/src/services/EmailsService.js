@@ -6,10 +6,12 @@ import { api } from './AxiosService'
 class EmailsService {
   async createEmail(rawEmail) {
     try {
-      const res = await api.post('/api/emails', rawEmail)
+      console.log(rawEmail)
+      const res = await api.post('api/emails', rawEmail)
       AppState.email = new Email(res.data)
+      console.log(AppState.email)
     } catch (err) {
-      logger.error('HAVE YOU STARTED YOUR SERVER YET???', err)
+      logger.error(err)
     }
   }
 }

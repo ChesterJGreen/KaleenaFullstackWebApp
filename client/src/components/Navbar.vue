@@ -16,7 +16,7 @@
                 <ul class="navbar-nav me-auto text-dark volk-font font-30px d-flex flex-row">
                   <div class="row ">
                     <div class="col-9 d-flex pt-3">
-                      <Div class="row">
+                      <div class="row">
                       <li class="col-4">
                         <router-link :to="{ name: 'About' }" class="router btn text-dark selectable text-uppercase">
                           About Me
@@ -37,7 +37,7 @@
                           Contact
                         </router-link>
                       </li>
-                    </Div>
+                    </div>
                     </div>
                     <div class="col-2 d-flex ps-3 pt-3">
                       <li class="mx-2">
