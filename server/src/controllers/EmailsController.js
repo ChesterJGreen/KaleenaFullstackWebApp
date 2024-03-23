@@ -1,20 +1,21 @@
 import { Auth0Provider } from '@bcwdev/auth0provider'
 import { emailsService } from '../services/EmailsService.js'
 import BaseController from '../utils/BaseController'
+import { sanitizer } from '../utils/Sanitize.js'
 
 export class EmailsController extends BaseController {
   constructor() {
     super('api/emails')
     this.router
+      .post('', this.create)
+      .use(Auth0Provider.getAuthorizedUserInfo)
       .get('', this.getAll)
       .get('/:id', this.getById)
-      .post('', this.create)
       .put('/:id', this.edit)
       .delete('/:id', this.destroy)
-      // NOTE If there is an authenticated user it will attach here otherwise allows through
-      //.get('/:id', Auth0Provider.tryAttachUserInfo, this.getOneValue)
-      // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
-      .use(Auth0Provider.getAuthorizedUserInfo)
+    // NOTE If there is an authenticated user it will attach here otherwise allows through
+    //.get('/:id', Auth0Provider.tryAttachUserInfo, this.getOneValue)
+    // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
   }
 
   /**
@@ -49,13 +50,16 @@ export class EmailsController extends BaseController {
       next(error)
     }
   }
-  
+
 
   async create(request, response, next) {
     try {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
-      // request.body.creatorId = request.userInfo.id
-      console.log("We're in the Controller")
+      // request.body.creatorId = request.userInfo.id   
+      const onlyLetters = sanitizer.onlyLettersPattern(request.body.name)
+      if(!onlyLetters) {
+        response.status(400).json({ err: "No special characters and no numbers, please!"})
+      }
       const email = await emailsService.create(request.body)
       response.json(email)
     } catch (error) {

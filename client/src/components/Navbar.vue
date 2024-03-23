@@ -28,13 +28,13 @@
                         </router-link>
                       </li>
                       <li class="col-3">
-                        <router-link :to="{ name: 'Extras' }" class="router btn text-dark selectable text-uppercase">
-                          Extras
-                        </router-link>
-                      </li>
-                      <li class="col-2">
                         <router-link :to="{ name: 'Contact' }" class="router btn text-dark selectable text-uppercase">
                           Contact
+                        </router-link>
+                      </li>
+                      <li class="col-3">
+                        <router-link :to="{ name: 'Extras' }" class="router btn text-white selectable text-uppercase">
+                          Extras
                         </router-link>
                       </li>
                     </div>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-1">
                       
-                      <a href="https://www.kaleenashreeve.com"><img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="200"></a>
+                      <a class="button"><img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="200"></a>
                     </div>
                   </div>
                 </ul>

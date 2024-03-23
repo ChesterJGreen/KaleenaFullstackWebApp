@@ -56,14 +56,14 @@
                             Books
                         </router-link>
                     </ul>
-                    <ul class="col-2 text-center">
-                        <router-link :to="{ name: 'Extras' }" class="text-dark selectable text-uppercase">
-                            Extras
-                        </router-link>
-                    </ul>
                     <ul class="col-1">
                         <router-link :to="{ name: 'Contact' }" class="text-dark selectable text-uppercase">
                             Contact
+                        </router-link>
+                    </ul>
+                    <ul class="col-2 text-center">
+                        <router-link :to="{ name: 'Extras' }" class="text-white selectable text-uppercase">
+                            Extras
                         </router-link>
                     </ul>
                 </div>

@@ -7,8 +7,8 @@ class EmailsService {
   async createEmail(rawEmail) {
     try {
       console.log(rawEmail)
-      const res = await api.post('api/emails', rawEmail)
-      AppState.email = new Email(res.data)
+      await api.post('api/emails', rawEmail)
+      AppState.email = {}
       console.log(AppState.email)
     } catch (err) {
       logger.error(err)
