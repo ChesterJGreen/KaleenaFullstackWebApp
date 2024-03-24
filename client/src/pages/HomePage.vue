@@ -7,33 +7,35 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="row" id="love-story-text">
+        <div class="row volk-font" id="love-story-text">
           <div class="col-5"></div>
           <div class="col-3 mt-5" id="love-story-font">
-            <p class="text-white text-center">LIVE IN</p>
-            <p class="text-white text-center">LOVE</p>
+            <span class="text-centerps-5">LIVE IN<br><span class="ps-5">
+                LOVE
+              </span>
+            </span>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-center bg-offWhite py-5">
+      <div class="col-12 text-center bg-pink1 py-5">
         <span class="xxx-large prata-font">Stories that will steal your heart </span>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 text-center my-5">
-        <div class="row mt-5">
-          <div class="col-12 mt-5">
-            <span class="cardo-font large-font">Hi! I'm author</span>
+    <div class="row mt-0 py-0">
+      <div class="col-4 text-center mt-2">
+        <div class="row mt-3">
+          <div class="col-12">
+            <span class="prata-font large-font">Hi! I'm author</span>
           </div>
         </div>
-        <div class="row my-3 text-start">
+        <div class="row mt-3 text-start">
           <div class="col-6 offset-3 ps-5">
             <span class="playlist-font xxx-large">Kaleena</span>
           </div>
         </div>
-        <div class="row my-3">
+        <div class="row my-1">
           <div class="col-6 offset-4">
             <span class="playlist-font xxx-large">Shreeve</span>
           </div>
@@ -41,44 +43,46 @@
 
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font small"><a href="http://www.kaleenashreeve.com"><u class="pink-text">GET TO KNOW
-                  ME</u></a></span>
+            <router-link :to="{ name: 'About' }" class="router btn text-dark selectable text-uppercase">
+              <span class="small"><u class="pink-text2 volk-font">GET TO KNOW
+                  ME</u></span>
+            </router-link>
           </div>
         </div>
       </div>
-      <div class="col-4 mt-5">
-        <img src="src\assets\img\KaleenaPortrait.jpg" alt="" width="500">
+      <div class="col-4 text-center">
+        <img src="src\assets\img\Image20240323205300.png" alt="" width="400">
       </div>
-      <div class="col-4 mt-5 text-center">
-        <div class="row mt-5">
-          <div class="col-12 mt-4">
-            <span class="cardo-font x-large">Check out my romance</span>
+      <div class="col-4 text-center prata-font">
+        <div class="row mt-0">
+          <div class="col-12 mt-2">
+            <span class="prata-font x-large">Check out my romance</span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large"><span class="playlist-font xx-large">books</span> and signup for</span>
+            <span class="x-large"><span class="playlist-font xx-large">books</span> and signup for</span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large">my suggested <span class="playlist-font xx-large">movies</span> </span>
+            <span class="x-large">my suggested <span class="playlist-font xx-large">movies</span> </span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font x-large">and <span class="playlist-font xx-large">music</span> list on all</span>
+            <span class="x-large">and <span class="playlist-font xx-large">music</span> list on all</span>
           </div>
         </div>
         <div class="row">
           <div class="col-12 mt-2">
-            <span class="cardo-font x-large">things sweet romance </span>
+            <span class="x-large">things sweet romance </span>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <span class="cardo-font small"><a href="http://www.kaleenashreeve.com"><u
-                  class="pink-text">NEWSLETTER</u></a></span>
+            <span class="small"><a href="http://www.kaleenashreeve.com/about"><u
+                  class="pink-text2 volk-font">NEWSLETTER</u></a></span>
           </div>
         </div>
 
@@ -86,11 +90,11 @@
     </div>
     <div class="row mistakenheart-bg">
       <div class="col-10 offset-1">
-        <div class="row m-5 bg-white rounded-75">
+        <div class="row m-5 bg-pink1 rounded-75">
           <div class="col-4 text-center ">
-            <div class="row">
+            <div class="row pt-4">
               <div class="col-12 pt-5">
-                <span class="xx-large ">Book 1</span>
+                <span class="xx-large prata-font">Book 1</span>
               </div>
             </div>
 
@@ -99,22 +103,16 @@
             <img src="src\assets\img\1-HomepageMistaken Heart Logo Dark.png" width="300" />
           </div>
           <div class="col-3 text-center pt-3">
-            <div class="row">
+            <div class="row prata-font">
               <div class="col-12"><span class="xx-large">Gavin and Sarah</span></div>
-              <div class="col-12"><span>Accidental marriage</span></div>
-              <div class="col-12"><span>Mistaken identity</span></div>
-              <div class="col-12"><span>Slow burn romance</span></div>
-              <div class="col-12 mb-3"><span>Small town</span></div>
+              <div class="col-12"><span>Marriage of Convenience</span></div>
+              <div class="col-12"><span>Mistaken Identity</span></div>
+              <div class="col-12"><span>Slow Burn Romance</span></div>
+              <div class="col-12 mb-3"><span>Small Town</span></div>
             </div>
-
           </div>
-
-
         </div>
-
       </div>
-
-
     </div>
     <div class="row">
       <div class="col-8">
@@ -123,7 +121,7 @@
             <span class="playlist-font xxx-large">Lonely Cowboy Hearts Series</span>
           </div>
           <div class="col-12 text-center">
-            <img src="src\assets\img\1-Homepage Heart Divider.png" width="400" />
+            <img src="src\assets\img\1-Heart Divider.png" width="400" />
           </div>
         </div>
         <div class="col-12 text-center mt-3 volk-font">
@@ -135,33 +133,40 @@
         <div class="col-12 text-center mt-3 prata-font">
           <span class="large ">An accidental marriage ropes them together,</span>
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center prata-font">
           <span class="large ">but will the tethers that bind them</span>
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center prata-font">
           <span class="large ">be strong enough to overcome</span>
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center prata-font">
           <span class="large ">their explosive beginning?</span>
         </div>
         <div class="row">
           <div class="col-10 text-center">
             <div class="row">
               <div class="col-2 offset-6">
-                <span class="cardo-font small"><a href="http://www.kaleenashreeve.com"><u class="pink-text">READ
-                      MORE</u></a></span>
+
+                <router-link :to="{ name: 'Books' }" class="btn selectable text-uppercase">
+                  <u class="pink-text2"><span class="volk-font small pink-text2">READ
+                      MORE</span></u>
+                </router-link>
 
               </div>
             </div>
           </div>
-          <div class="col-2"><button class="rounded-pill p-2">Buy on Amazon</button></div>
+          <div class="col-2">
+            <div class="rounded-pill p-2 volk-font bg-pink1 pink-border-amazon text-center" style="button"><a
+                href="https://www.amazon.com/author/kaleenashreeve"><u class="amazon-text"><span class="amazon-text">Buy
+                    on Amazon</span></u></a></div>
+          </div>
         </div>
 
       </div>
       <div class="col-4">
         <div class="row">
-          <div class="col-8">
-            <img src="src\assets\img\3A-Mistaken Heart Cover-Rollover for Blurb.png" width="275" />
+          <div class="col-7">
+            <img src="src\assets\img\Image20240323213407.png" width="275" />
           </div>
           <div class="col-4 d-flex align-items-center">
             <div class="row">
@@ -170,7 +175,7 @@
                 <img src="src\assets\img\1-Homepage Pink QR Code Heart.png" width="100" />
               </div>
               <div class="col-12">
-                <div class="row text-center">
+                <div class="row text-center volk-font">
                   <div class="col-12"><span>Book has QR codes</span></div>
                   <div class="col-12"><span>with bonus extras</span></div>
                   <div class="col-12"><span>inside only found</span></div>
@@ -192,26 +197,28 @@
               <div class="col-10 offset-1 pe-5">
                 <p class="progress-bar-bg">
                 <div class="row px-4 bg-white rounded-75 border-pink p-4">
-                  <div class="col-9 text-center x-large">
+                  <div class="col-12 text-center xx-large volk-font">
                     <span><b>Books Progress Bar</b></span>
                   </div>
                   <div class="col-12">
-                    <span class="small">Christmas Novel</span>
+                    <span class="large volk-font">Christmas Novella</span>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12">
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                       aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped"
-                        style="width: 75%">75%</div>
+                      <div
+                        class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped large volk-font"
+                        style="width: 25%">25%</div>
                     </div>
                   </div>
                   <div class="col-12 mt-2">
-                    <span class="small">Secret Heart -- Lonely Cowboy Hearts Book 2</span>
+                    <span class="large volk-font">Secret Heart -- Lonely Cowboy Hearts Book 2</span>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12">
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                       aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped"
+                      <div
+                        class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped large volk-font"
                         style="width: 25%">25%</div>
                     </div>
                   </div>
@@ -223,30 +230,38 @@
           <div class="col-6 mt-4">
             <div class="row text-center">
               <div class="col-12">
-                <span class="xx-large">Mistletoe Wishes & Gingerbread Kisses</span>
+                <span class="xx-large prata-font">Mistletoe Wishes & Gingerbread Kisses</span>
               </div>
               <div class="col-12 text-center">
-                <img src="src\assets\img\1-Homepage Heart Divider.png" width="600" />
+                <img src="src\assets\img\1-Heart Divider.png" width="600" />
               </div>
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-6">
-                    <img src="src\assets\img\1-Homepage Mistletoe Icon Tilted Right.png" width="50" />
+                    <img src="src\assets\img\1-Homepage Mistletoe Icon Tilted Right.png" width="90" />
                   </div>
                 </div>
               </div>
               <div class="col-6">
-                <span class="x-large">Coming October 2024!</span>
+                <div class="row">
+                  <div class="col-12">
+                    <span class="x-large prata-font">Coming October 2024!</span>
+                  </div>
+                  <div class="col-12">
+                    <div class="col-4 offset-4 mt-4">
+                      <div class="rounded-pill p-2 volk-font bg-pink1 pink-border-amazon text-center" style="button"><a
+                          href="NEWSLETTER"><u class="amazon-text"><span class="amazon-text">Updates Here</span></u></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-1">
-                    <img src="src\assets\img\1-HomepageGingerbread Man Icon Tilted Left .png" width="50" />
+                    <img src="src\assets\img\1-HomepageGingerbread Man Icon Tilted Left .png" width="90" />
                   </div>
                 </div>
-              </div>
-              <div class="col-12">
-                <button class="rounded-pill p-1"><a href="">Updates Here</a></button>
               </div>
             </div>
           </div>
@@ -256,54 +271,52 @@
     <div class="row mt-5">
       <div class="col-12">
         <div class="row text-center">
-          <div class="col-12"><span class="playlist-font xxx-large"><b>Sweet Bites </b></span><span class="xx-large">
+          <div class="col-12"><span class="playlist-font x4-large"><b>Sweet Bites </b></span><span
+              class="xxx-large volk-font">
               <b>NEWSLETTER</b></span></div>
-          <div class="col-12 mb-3"><span class="x-large">Love stories straight to your inbox</span></div>
+          <div class="col-12 mb-3"><span class="xx-large prata-font">Love stories straight to your inbox</span></div>
           <div class="col-12 p-0"><img src="src\assets\img\1-Homepage Mug & Cookie Photo.png" width="100%" /></div>
-          <div class="col-12 large d-flex justify-content-center">
-            <ul>
-              <li class="pe-5">Books</li>
-              <li class="pe-5">Movies </li>
-              <li class="pe-5">Music </li>
-              <li class="pe-5">Self </li>
-              <li class="pe-5">God </li>
-            </ul>
-          </div>
-          <div class="col-12 input-group">
-            <div class="row mb-3">
-              <div class="col-2">
-                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="75%" />
+          <div class="row mb-3">
+            <div class="col-3">
+              <div class="row">
+                <div class="col-3 mt-3">
+                  <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button.png" width="300" />
+                </div>
               </div>
-              <div class="col-3 pt-3">
-                <input type="text" class="form-control" v-model="state.rawEmail.name" placeholder="Name" aria-label="Name">
-              </div>
-              <div class="col-3 pt-3 offset-1">
-                <input type="text" class="form-control" v-model="state.rawEmail.email" required placeholder="Email" aria-label="Name">
-              </div>
-              <div class="col-2">
-                <button type="button" class="mistakenheart-bg rounded-75 p-2 mt-3 px-5" @click="createEmail()" data-bs-target="#createEmail">Send</button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Email Submitted</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Thank you so much for subscribing to my "Sweet Bites" Newsletter!</p>
-                        <p>Kaleena is still cooking up the newsletter and it will be hitting your inbox as soon as is it ready.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="col-9">
+              <div class="row">
+                <div class="col-8 x-large d-flex justify-content-center prata-font mt-3">
+                  <ul>
+                    <li class="pe-5">Books</li>
+                    <li class="pe-5">Movies </li>
+                    <li class="pe-5">Music </li>
+                    <li class="pe-5">Self </li>
+                    <li class="pe-5">God </li>
+                  </ul>
+                </div>
+                <div class="col-12">
+                  <div class="row input-group">
+                    <div class="col-5 pt-3">
+                      <input type="text" class="form-control prata-font" v-model="state.rawEmail.name"
+                        placeholder="Name" aria-label="Name">
+                    </div>
+                    <div class="col-5 pt-3">
+                      <input type="text" class="form-control prata-font" v-model="state.rawEmail.email" required
+                        placeholder="Email" aria-label="Name">
+                    </div>
+                    <div class="col-2 offset-1 pt-2">
+                        <div class="rounded-pill p-2 volk-font bg-pink1 pink-border-amazon text-center" type="button" style="button" @click="createEmail()" data-bs-target="#createEmail"><a>
+                          <u class="amazon-text"><span class="amazon-text">Send</span></u></a>
                       </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
-            </div>
+            <div class="col-3"></div>
           </div>
+
         </div>
       </div>
     </div>
@@ -314,20 +327,22 @@
             <div class="row text-center">
               <div class="col-12">
                 <div class="row">
-                  <div class="col-2">
+                  <!-- <div class="col-2">
                     <img src="src/assets/img/3A-Tilted Sun Heart.png" width="100%">
-                  </div>
-                  <div class="col-10 pt-4 ">
-                    <span class="playlist-font xxx-large">Extras you won’t get anywhere else </span>
+                  </div> -->
+                  <div class="col-12 pt-4">
+                    <span class="playlist-font x4-large">Extras you won’t get anywhere else </span>
                   </div>
                 </div>
               </div>
-              <div class="col-12">
-                <img src="src\assets\img\1-Homepage Heart Divider.png" width="100%">
+              <div class="col-12 mt-2">
+                <img src="src\assets\img\1-Heart Divider.png" width="100%">
               </div>
-              <div class="col-12"><span>Deleted Scenes • Playlist • Story Map</span></div>
-              <div class="col-12"><span> Did You Know . . .</span></div>
-              <div class="col-12"><a>Extras Here</a></div>
+              <div class="row">
+                <div class="col-12"><span class="xx-large prata-font">Deleted Scenes • Playlist • Story Map<br>Did You Know . . .</span><br>
+                <a class="volk-font pink-text small"><u>EXTRAS HERE</u></a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-4 p-0 ps-5">
@@ -344,6 +359,8 @@
 import { reactive } from 'vue';
 import Pop from '../utils/Pop';
 import { emailsService } from '../services/EmailsService';
+import { sanitizer } from '../utils/Sanitize';
+import Swal from 'sweetalert2';
 
 export default {
   name: "Home",
@@ -357,9 +374,16 @@ export default {
         try {
           await emailsService.createEmail(state.rawEmail)
           state.rawEmail = {}
-          Pop.toast('Email Accepted', 'success')
+          Swal.fire({
+            title: `Thank you so much for subscribing to my "Sweet Bites" Newsletter!`,
+            text: "Kaleena is still cooking up the newsletter and it will be hitting your inbox as soon as it is ready.",
+            icon: "success"
+          })
         } catch (error) {
-          Pop.toast(error, 'error')
+          Swal.fire({
+            text: "Please use only letters in the name box and correct emails.",
+            icon: "error"
+          })
         }
       }
     }
@@ -415,8 +439,9 @@ export default {
   left: 1.5em;
   top: 3em;
   font-size: 500%;
-  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5)
+  color: #ffeff9;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
 }
 
 #FeelTheSighText {
@@ -475,6 +500,10 @@ export default {
   top: 0px;
 }
 
+.amazon-text {
+  color: #333333;
+}
+
 @keyframes heartbeat {
   0% {
     transform: scale(1) rotate(-45deg);
@@ -517,6 +546,10 @@ export default {
 // button {
 //   border: 1px dashed gray;
 // }
+.pink-border-amazon {
+  box-shadow: 10px 10px 3px 1px #FFB4DA;
+
+}
 
 .mistakenheart-bg {
   background-color: #ECF5FF;
@@ -539,9 +572,10 @@ export default {
 }
 
 .border-pink {
-  border: 2px solid #FFB4DA;
+  border: 10px solid #ffeff9;
 }
 
 li {
   float: left;
-}</style>
+}
+</style>

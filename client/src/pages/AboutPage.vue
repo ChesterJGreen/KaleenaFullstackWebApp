@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="col-4 mt-5">
-        <img src="src\assets\img\KaleenaPortrait.jpg" alt="" width="500">
+        <img src="src\assets\img\Image20240323205300.png" alt="" width="500">
       </div>
       <div class="col-4 mt-5 text-center">
         <div class="row mt-5">

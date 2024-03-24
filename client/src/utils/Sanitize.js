@@ -1,16 +1,11 @@
-//DATA SANITIZATION against NoSQL query injection
-
-//DATA SANITIZATION against site script 
-
 class Sanitizer {
-    constructor(input) {
-        this.input = input;
+    constructor() {
     }
-    onlyLettersPattern(input) {
-        const onlyLettersPatten = /^[A-Za-z]+$/
-        if(!input.match(onlyLettersPatten)) {
+    onlyLettersPattern(string) {
+        const onlyLettersPatten = /^[A-Za-z ]+$/
+        if(!string.match(onlyLettersPatten)) {
             return false
-        } else return true
+        } 
     }
 
 }

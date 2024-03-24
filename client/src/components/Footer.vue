@@ -1,26 +1,10 @@
 <template>
     <div class="container-fluid mt-5">
-        <div class="row pinkSquareBorder">
-            <div class="col-10 offset-1 pinkBorder">
-                <div class="row">
-                    <div class="col-3 p-5">
-                        <img src="src\assets\img\1-Homepage Logo Transparent.png" width="200">
-                    </div>
-                    <div class="col-6 p-5 text-center">
-                        <div class="row">
-                            <div class="col-12 pt-5" id="SweetBites">
-                                <p class="cardo-font">Thanks for stopping by!</p>
-                                <p>Let's keep in touch</p>
-                                <img src="src\assets\img\1-Homepage Sweet Bites Newsletter Button Footer.png" width="250">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2 offset-1 pt-5 ps-5">
-                        <img src="src\assets\img\1-HomepageEnvelope Stamp Footer.png" width="100">
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center">
+            <img src="src\assets\img\Footer Envelope.png" width="1400vh">
         </div>
+      </div>
         <div class="row mt-3">
             <div class="col-12">
                 <ul class="navbar justify-content-center justify-content-end">
@@ -45,7 +29,7 @@
         </div>
         <div class="row volk-font x-large">
             <div class="col-8 offset-2">
-                <div class="row">
+                <div class="row justify-content-center">
                     <ul class="col-2 offset-2 text-end">
                         <router-link :to="{ name: 'About' }" class="text-dark selectable text-uppercase">
                             About Me
@@ -69,7 +53,7 @@
                 </div>
             </div>
             <div class="col-2">
-                <span class="large">© 2023 Kaleena Shreeve</span>
+                <span class="large">© 2024 Kaleena Shreeve</span>
             </div>
         </div>
 

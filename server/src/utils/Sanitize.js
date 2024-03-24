@@ -7,7 +7,7 @@ class Sanitizer {
         this.input = input;
     }
     onlyLettersPattern(input) {
-        const onlyLettersPatten = /^[A-Za-z]+$/
+        const onlyLettersPatten = /^[A-Za-z +]+$/
         if(!input.match(onlyLettersPatten)) {
             return false
         } else return true

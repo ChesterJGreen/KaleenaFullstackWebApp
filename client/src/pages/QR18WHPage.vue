@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <img class="" src="src\assets\img\1-Homepage Heart Divider.png" width="1000">
+                <img class="" src="src\assets\img\1-Heart Divider.png" width="1000">
             </div>
         </div>
         <div class="row">

@@ -56,10 +56,6 @@ export class EmailsController extends BaseController {
     try {
       // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
       // request.body.creatorId = request.userInfo.id   
-      const onlyLetters = sanitizer.onlyLettersPattern(request.body.name)
-      if(!onlyLetters) {
-        response.status(400).json({ err: "No special characters and no numbers, please!"})
-      }
       const email = await emailsService.create(request.body)
       response.json(email)
     } catch (error) {
