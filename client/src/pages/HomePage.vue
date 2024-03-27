@@ -100,7 +100,7 @@
 
           </div>
           <div class="col-4 text-center">
-            <img src="./src/assets/img/1-HomepageMistakenHeartLogoDark.png" width="300" />
+            <img src="./src/assets/img/HomepageMistakenHeartLogoDark.png" width="300" />
           </div>
           <div class="col-3 text-center pt-3">
             <div class="row prata-font">
@@ -121,7 +121,7 @@
             <span class="playlist-font xxx-large">Lonely Cowboy Hearts Series</span>
           </div>
           <div class="col-12 text-center">
-            <img src="./src/assets/img/1-HeartDivider.png" width="400" />
+            <img src="./src/assets/img/HeartDivider.png" width="400" />
           </div>
         </div>
         <div class="col-12 text-center mt-3 volk-font">
@@ -172,7 +172,7 @@
             <div class="row">
               <div class="col-12 my-5"></div>
               <div class="col-12 text-center">
-                <img src="./src/assets/img/1-HomepagePinkQRCodeHeart.png" width="100" />
+                <img src="./src/assets/img/HomepagePinkQRCodeHeart.png" width="100" />
               </div>
               <div class="col-12">
                 <div class="row text-center volk-font">
@@ -233,12 +233,12 @@
                 <span class="xx-large prata-font">Mistletoe Wishes & Gingerbread Kisses</span>
               </div>
               <div class="col-12 text-center">
-                <img src="./src/assets/img/1-HeartDivider.png" width="600" />
+                <img src="./src/assets/img/HeartDivider.png" width="600" />
               </div>
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-6">
-                    <img src="./src/assets/img/1-HomepageMistletoeIconTiltedRight.png" width="90" />
+                    <img src="./src/assets/img/HomepageMistletoeIconTiltedRight.png" width="90" />
                   </div>
                 </div>
               </div>
@@ -259,7 +259,7 @@
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-1">
-                    <img src="./src/assets/img/1-HomepageGingerbreadManIconTiltedLeft.png" width="90" />
+                    <img src="./src/assets/img/HomepageGingerbreadManIconTiltedLeft.png" width="90" />
                   </div>
                 </div>
               </div>
@@ -275,12 +275,12 @@
               class="xxx-large volk-font">
               <b>NEWSLETTER</b></span></div>
           <div class="col-12 mb-3"><span class="xx-large prata-font">Love stories straight to your inbox</span></div>
-          <div class="col-12 p-0"><img src="./src/assets/img/1-HomepageMug&CookiePhoto.png" width="100%" /></div>
+          <div class="col-12 p-0"><img src="./src/assets/img/HomepageMug&CookiePhoto.png" width="100%" /></div>
           <div class="row mb-3">
             <div class="col-3">
               <div class="row">
                 <div class="col-3 mt-3">
-                  <img src="./src/assets/img/1-HomepageSweetBitesNewsletterButton.png" width="300" />
+                  <img src="./src/assets/img/HomepageSweetBitesNewsletterButton.png" width="300" />
                 </div>
               </div>
             </div>
@@ -336,7 +336,7 @@
                 </div>
               </div>
               <div class="col-12 mt-2">
-                <img src="./src/assets/img/1-HeartDivider.png" width="100%">
+                <img src="./src/assets/img/HeartDivider.png" width="100%">
               </div>
               <div class="row">
                 <div class="col-12"><span class="xx-large prata-font">Deleted Scenes • Playlist • Story Map<br>Did You Know . . .</span><br>
@@ -346,7 +346,7 @@
             </div>
           </div>
           <div class="col-4 p-0 ps-5">
-            <img src="./src/assets/img/1-HomepageWomanDrinkingFromMug.png" width="100%" />
+            <img src="./src/assets/img/HomepageWomanDrinkingFromMug.png" width="100%" />
           </div>
         </div>
       </div>
@@ -559,7 +559,7 @@ export default {
 }
 
 .progress-bar-bg {
-  background-image: url('assets/img/1-Homepage Books Progress Bar Background.png');
+  background-image: url('assets/img/Homepage Books Progress Bar Background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
