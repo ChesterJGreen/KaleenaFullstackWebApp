@@ -2,7 +2,7 @@
     <div class="container-fluid mt-5">
       <div class="row">
         <div class="col-12 text-center">
-            <img src="../assets/img/FooterEnvelope.png" width="1400vh">
+            <img src="/src/assets/img/FooterEnvelope.png" width="1400vh">
         </div>
       </div>
         <div class="row mt-3">
@@ -10,19 +10,19 @@
                 <ul class="navbar justify-content-center justify-content-end">
                     <ul>
                         <a href="https://www.facebook.com/authorkaleenashreeve"><img width="25"
-                                src="../assets/img/1-HomepageFacebookButton.png"></a>
+                                src="/src/assets/img/1-HomepageFacebookButton.png"></a>
                     </ul>
                     <ul>
                         <a href="https://www.instagram.com/authorkaleenashreeve/"><img width="25"
-                                src="../assets/img/1-HomepageInstagramButton.png"></a>
+                                src="/src/assets/img/1-HomepageInstagramButton.png"></a>
                     </ul>
                     <ul>
                         <a href="https://www.pinterest.com/authorkaleenashreeve/"><img width="25"
-                                src="../assets/img/1-HomepagePinterestButtonHeader.png"></a>
+                                src="/src/assets/img/1-HomepagePinterestButtonHeader.png"></a>
                     </ul>
                     <ul>
                         <a href="https://www.youtube.com"><img width="25"
-                                src="../assets/img/1-HomepageHeaderYouTubeButton.png"></a>
+                                src="/src/assets/img/1-HomepageHeaderYouTubeButton.png"></a>
                     </ul>
                 </ul>
             </div>

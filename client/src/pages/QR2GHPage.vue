@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <img class="" src="../assets/img/1-HeartDivider.png" width="1000">
+                <img class="" src="/src/assets/img/1-HeartDivider.png" width="1000">
             </div>
         </div>
         <div class="row px-5">
@@ -15,13 +15,13 @@
                 <div class="row">
                     <div class="col-1 offset-3 text-end">
                         <a href="https://www.youtube.com/watch?v=zV40NzkqJrw"><img
-                                src="../assets/img/QRRedYouTube.png" width="50"></a>
+                                src="/src/assets/img/QRRedYouTube.png" width="50"></a>
                     </div>
                     <div class="col-4">
                         <h5>Dierks Bentley: "I Hold On"</h5>
                     </div>
                     <div class="col-1">
-                        <a href="https://open.spotify.com/track/01e8dGbulrphX8j3fZDQYk"><img width="50" src="../assets/img/QRGreenSpotify.png">
+                        <a href="https://open.spotify.com/track/01e8dGbulrphX8j3fZDQYk"><img width="50" src="/src/assets/img/QRGreenSpotify.png">
                         </a>
                     </div>
                 </div>
