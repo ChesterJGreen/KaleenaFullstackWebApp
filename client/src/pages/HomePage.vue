@@ -2,7 +2,7 @@
   <div class="flex-grow-1 container-fluid bg-white">
     <div class="row">
       <div class="col-12 p-0">
-        <img alt="logo" width="100%" src="./src/assets/img/StolenHeartfinalimageedit.jpeg" />
+        <img alt="logo" width="100%" src="/src/assets/img/StolenHeartfinalimageedit.jpeg"/>
       </div>
     </div>
     <div class="row">            
@@ -50,8 +50,8 @@
           </div>
         </div>
       </div>
-      <div class="col-4 text-center">
-        <img src="./src/assets/img/Image20240323205300.png" alt="" width="400">
+      <div class="col-4 text-center mt-3">
+        <img src="/src/assets/img/ImageKaleena.png" alt="" width="400">
       </div>
       <div class="col-4 text-center prata-font">
         <div class="row mt-0">
@@ -100,7 +100,7 @@
 
           </div>
           <div class="col-4 text-center">
-            <img src="./src/assets/img/HomepageMistakenHeartLogoDark.png" width="300" />
+            <img src="/src/assets/img/HomepageMistakenHeartLogoDark.png" width="300" />
           </div>
           <div class="col-3 text-center pt-3">
             <div class="row prata-font">
@@ -121,7 +121,7 @@
             <span class="playlist-font xxx-large">Lonely Cowboy Hearts Series</span>
           </div>
           <div class="col-12 text-center">
-            <img src="./src/assets/img/HeartDivider.png" width="400" />
+            <img src="/src/assets/img/HeartDivider.png" width="400" />
           </div>
         </div>
         <div class="col-12 text-center mt-3 volk-font">
@@ -166,13 +166,13 @@
       <div class="col-4">
         <div class="row">
           <div class="col-7">
-            <img src="./src/assets/img/Image20240323213407.png" width="275" />
+            <img src="/src/assets/img/Image20240323213407.png" width="275" />
           </div>
           <div class="col-4 d-flex align-items-center">
             <div class="row">
               <div class="col-12 my-5"></div>
               <div class="col-12 text-center">
-                <img src="./src/assets/img/HomepagePinkQRCodeHeart.png" width="100" />
+                <img src="/src/assets/img/HomepagePinkQRCodeHeart.png" width="100" />
               </div>
               <div class="col-12">
                 <div class="row text-center volk-font">
@@ -233,12 +233,12 @@
                 <span class="xx-large prata-font">Mistletoe Wishes & Gingerbread Kisses</span>
               </div>
               <div class="col-12 text-center">
-                <img src="./src/assets/img/HeartDivider.png" width="600" />
+                <img src="/src/assets/img/HeartDivider.png" width="600" />
               </div>
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-6">
-                    <img src="./src/assets/img/HomepageMistletoeIconTiltedRight.png" width="90" />
+                    <img src="/src/assets/img/HomepageMistletoeIconTiltedRight.png" width="90" />
                   </div>
                 </div>
               </div>
@@ -259,7 +259,7 @@
               <div class="col-3">
                 <div class="row">
                   <div class="col-4 offset-1">
-                    <img src="./src/assets/img/HomepageGingerbreadManIconTiltedLeft.png" width="90" />
+                    <img src="/src/assets/img/HomepageGingerbreadManIconTiltedLeft.png" width="90" />
                   </div>
                 </div>
               </div>
@@ -275,12 +275,12 @@
               class="xxx-large volk-font">
               <b>NEWSLETTER</b></span></div>
           <div class="col-12 mb-3"><span class="xx-large prata-font">Love stories straight to your inbox</span></div>
-          <div class="col-12 p-0"><img src="./src/assets/img/HomepageMug&CookiePhoto.png" width="100%" /></div>
+          <div class="col-12 p-0"><img src="/src/assets/img/HomepageMug&CookiePhoto.png" width="100%" /></div>
           <div class="row mb-3">
             <div class="col-3">
               <div class="row">
                 <div class="col-3 mt-3">
-                  <img src="./src/assets/img/HomepageSweetBitesNewsletterButton.png" width="300" />
+                  <img src="/src/assets/img/HomepageSweetBitesNewsletterButton.png" width="300" />
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@
               <div class="col-12">
                 <div class="row">
                   <!-- <div class="col-2">
-                    <img src="./src./src/assets/img/threeA-TiltedSunHeart.png" width="100%">
+                    <img src="/src/assets/img/threeA-TiltedSunHeart.png" width="100%">
                   </div> -->
                   <div class="col-12 pt-4">
                     <span class="playlist-font x4-large">Extras you won’t get anywhere else </span>
@@ -336,7 +336,7 @@
                 </div>
               </div>
               <div class="col-12 mt-2">
-                <img src="./src/assets/img/HeartDivider.png" width="100%">
+                <img src="/src/assets/img/HeartDivider.png" width="100%">
               </div>
               <div class="row">
                 <div class="col-12"><span class="xx-large prata-font">Deleted Scenes • Playlist • Story Map<br>Did You Know . . .</span><br>
@@ -346,7 +346,7 @@
             </div>
           </div>
           <div class="col-4 p-0 ps-5">
-            <img src="./src/assets/img/HomepageWomanDrinkingFromMug.png" width="100%" />
+            <img src="/src/assets/img/HomepageWomanDrinkingFromMug.png" width="100%" />
           </div>
         </div>
       </div>
@@ -357,7 +357,7 @@
 
 <script>
 import { reactive } from 'vue';
-import { emailsService } from './src/services/EmailsService';
+import { emailsService } from '../services/EmailsService';
 import Swal from 'sweetalert2';
 
 export default {
