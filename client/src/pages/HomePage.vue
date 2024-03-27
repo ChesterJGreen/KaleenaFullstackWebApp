@@ -357,9 +357,7 @@
 
 <script>
 import { reactive } from 'vue';
-import Pop from './src/utils/Pop';
 import { emailsService } from './src/services/EmailsService';
-import { sanitizer } from './src/utils/Sanitize';
 import Swal from 'sweetalert2';
 
 export default {
