@@ -328,7 +328,7 @@
               <div class="col-12">
                 <div class="row">
                   <!-- <div class="col-2">
-                    <img src="./src./src/assets/img/3A-TiltedSunHeart.png" width="100%">
+                    <img src="./src./src/assets/img/threeA-TiltedSunHeart.png" width="100%">
                   </div> -->
                   <div class="col-12 pt-4">
                     <span class="playlist-font x4-large">Extras you won’t get anywhere else </span>

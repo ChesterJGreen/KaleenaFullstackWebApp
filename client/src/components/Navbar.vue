@@ -7,7 +7,7 @@
             <div class="col-2">
               <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
                 <div class="d-flex flex-column align-items-center ps-5">
-                  <img src="./src/assets/img/1-HomepageLogoTransparent.png" class="rounded-pill" height="175" alt="">
+                  <img src="./src/assets/img/HomepageLogoTransparent.png" class="rounded-pill" height="175" alt="">
                 </div>
               </router-link>
             </div>
@@ -44,25 +44,25 @@
                       <div class="col-3 d-flex align-items-center">
                         <li class="mx-2 btn selectable">
                           <a href="https://www.instagram.com/authorkaleenashreeve/"><img width="35"
-                              src="./src/assets/img/1-HomepageInstagramButton.png"></a>
+                              src="./src/assets/img/HomepageInstagramButton.png"></a>
                         </li>
                         <li class="mx-2 btn selectable">
                           <a href="https://www.facebook.com/authorkaleenashreeve"><img width="35"
-                              src="./src/assets/img/1-HomepageFacebookButton.png"></a>
+                              src="./src/assets/img/HomepageFacebookButton.png"></a>
                         </li>
                         <li class="mx-2 btn selectable">
                           <a href="https://www.pinterest.com/authorkaleenashreeve/"><img width="35"
-                              src="./src/assets/img/1-HomepagePinterestButtonHeader.png"></a>
+                              src="./src/assets/img/HomepagePinterestButtonHeader.png"></a>
                         </li>
                         <li class=" mx-2 btn selectable">
                           <a href="https://www.youtube.com/"><img width="40"
-                              src="./src/assets/img/1-HomepageHeaderYouTubeButton.png"></a>
+                              src="./src/assets/img/HomepageHeaderYouTubeButton.png"></a>
                         </li>
                       </div>
                       <div class="col-1">
                         <li>
                           <router-link :to="{ name: 'Contact' }" class="router btn text-dark selectable text-uppercase mx-2">
-                            <img src="./src/assets/img/1-HomepageSweetBitesNewsletterButton.png" width="250">
+                            <img src="./src/assets/img/HomepageSweetBitesNewsletterButton.png" width="250">
                           </router-link>
                         </li>
                       </div>
