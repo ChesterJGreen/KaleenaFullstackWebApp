@@ -56,7 +56,7 @@
                         </li>
                         <li class=" mx-2 btn selectable">
                           <a href="https://www.youtube.com/"><img width="40"
-                              src="..\src\assets\img\1- Homepage Header YouTube Button.png"></a>
+                              src="..\src\assets\img\1-HomepageHeaderYouTubeButton.png"></a>
                         </li>
                       </div>
                       <div class="col-1">
