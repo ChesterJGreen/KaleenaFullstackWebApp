@@ -2,7 +2,7 @@
   <div class="container-fluid bg-white">
     <div class="row">
       <div class="col-12 p-0">
-        <img alt="logo" width="100%" src="..\src\assets\img\3ABooksHeroImageReversedAndCropped.png" />
+        <img alt="logo" width="100%" src="../assets/img/3ABooksHeroImageReversedAndCropped.png" />
       </div>
     </div>
     <div class="row">
@@ -25,7 +25,7 @@
         <div class="row">
           <div class="col-3 text-center mt-5">
            <p class="mt-5"><span class="playlist-font xxx-large">QR codes</span></p>
-            <img src="..\src\assets\img\1-HomepagePinkQRCodeHeart.png" width="100" >
+            <img src="../assets/img/1-HomepagePinkQRCodeHeart.png" width="100" >
           </div>
           <div class="col-3 text-center mt-5">
             <div class="row">
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="col-3 text-center mt-3">
-            <img src="..\src\assets\img\3ABooksMyPhoto.png" width="250">
+            <img src="../assets/img/3ABooksMyPhoto.png" width="250">
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
             <span class="prata-font xxx-large">Book 1</span>
           </div>
           <div class="col-12 my-3">
-            <img src="..\src\assets\img\1-HomepageMistakenHeartLogoDark.png" width="350"> 
+            <img src="../assets/img/1-HomepageMistakenHeartLogoDark.png" width="350"> 
           </div>
           <div class="col-12 prata-font mt-3">
             <span class="x-large">Gavin And Sarah</span>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="col-3">
-        <img src="..\src\assets\img\3A-MistakenHeartIpadMockup(1).png" width="100%" >
+        <img src="../assets/img/3A-MistakenHeartIpadMockup(1).png" width="100%" >
       </div>
       <div class="col-5 mt-5">
         <div class="row">
@@ -120,7 +120,7 @@
       <div class="col-12">
         <div class="row">
           <div class="col-3 pt-3">
-            <img src="..\src\assets\img\3A-FemaleCharacter-SarahImage.png" class="rounded" width="100%">
+            <img src="../assets/img/3A-FemaleCharacter-SarahImage.png" class="rounded" width="100%">
           </div>
           <div class="col-6">
             <div class="row">
@@ -128,7 +128,7 @@
                 <span class="playlist-font x4-large">Sarah & Gavin</span>
               </div>
               <div class="col-12 text-center">
-                <img src="..\src\assets\img\1-HeartDivider.png" width="75%">
+                <img src="../assets/img/1-HeartDivider.png" width="75%">
               </div>
               <div class="row text-center mt-5">
                 <div class="col-5 prata-font large mt-5">
@@ -169,7 +169,7 @@
                       </div>                  
                     </div>
                     <div class="col-3 mt-5 pt-5">
-                      <img src="..\src\assets\img\arrow-flipped-and-turned.png" id="arrow-to-extras" width="50">
+                      <img src="../assets/img/arrow-flipped-and-turned.png" id="arrow-to-extras" width="50">
                     </div>
                   </div>
                 </div>
@@ -177,7 +177,7 @@
             </div>
           </div>
           <div class="col-3 pt-3 rounded-2">
-            <img src="..\src\assets\img\3A-MaleCharacter-GavinImage.png" class="rounded-2" width="95%">
+            <img src="../assets/img/3A-MaleCharacter-GavinImage.png" class="rounded-2" width="95%">
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@
             <div class="my-5"></div>
             <div class="mt-5"><span class="small volk-font"><b>ROLL OVER FOR</b></span></div>
             <div><span class="small pe-1 volk-font"><b>BOOK BLURBS</b></span></div>
-            <img src="..\src\assets\img\arrow-turned.png" width="50">
+            <img src="../assets/img/arrow-turned.png" width="50">
           </div>
           <div class="col-8">
             <div class="row text-center my-3">
@@ -198,7 +198,7 @@
                 <span class="playlist-font xxx-large">Lonely Cowboy Heart Complete Series</span>
               </div>
               <div class="col-12">
-                <img src="..\src\assets\img\1-HeartDivider.png" width="400">
+                <img src="../assets/img/1-HeartDivider.png" width="400">
               </div>
               <div class="col-12 prata-font small">
                 <div class="row">
@@ -235,16 +235,16 @@
               <div class="col-12 mb-3">
                 <div class="row text-center prata-font small">
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-MistakenHeartCover-RolloverforBlurb.png" width="150">
+                    <img src="../assets/img/3A-MistakenHeartCover-RolloverforBlurb.png" width="150">
                   </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-Book2Mock-up.png" width="150">
+                    <img src="../assets/img/3A-Book2Mock-up.png" width="150">
                   </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-Book3Mock-up.png" width="150">
+                    <img src="../assets/img/3A-Book3Mock-up.png" width="150">
                   </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-Book4Mock-up.png" width="150">
+                    <img src="../assets/img/3A-Book4Mock-up.png" width="150">
                   </div>
                 </div>
               </div>
@@ -252,7 +252,7 @@
                 <span class="playlist-font xxx-large"> Christmnas go-along Novels</span>
               </div>
               <div class="col-12">
-                <img src="..\src\assets\img\1-HeartDivider.png" width="400">
+                <img src="../assets/img/1-HeartDivider.png" width="400">
               </div>
               <div class="col-12">
                 <div class="row prata-font small">
@@ -284,23 +284,23 @@
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <img src="..\src\assets\img\3A-MistletoeWishes&GingerbreadKissesMockup.png" width="150">
+                        <img src="../assets/img/3A-MistletoeWishes&GingerbreadKissesMockup.png" width="150">
                       </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-MistletoeWishes&ChristmasKissesMockup.png" width="150">
+                    <img src="../assets/img/3A-MistletoeWishes&ChristmasKissesMockup.png" width="150">
                   </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-MistletoeWishes&MidnightKissesMockup.png" width="150">
+                    <img src="../assets/img/3A-MistletoeWishes&MidnightKissesMockup.png" width="150">
                   </div>
                   <div class="col-3">
-                    <img src="..\src\assets\img\3A-MistletoeWishes&ChocolateKissesMockup.png" width="150">
+                    <img src="../assets/img/3A-MistletoeWishes&ChocolateKissesMockup.png" width="150">
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-2 text-end">
-            <img src="..\src\assets\img\3A-TiltedSunHeart-Opposite.png" width="250">
+            <img src="../assets/img/3A-TiltedSunHeart-Opposite.png" width="250">
           </div>
         </div>
       </div>
