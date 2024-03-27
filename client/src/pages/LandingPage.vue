@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row p-0">
         <div class="clo-12">
-          <img src="src\assets\img\3A Books Hero Image.png" width="1640">
+          <img src="..\src\assets\img\3A Books Hero Image.png" width="1640">
         </div>
       </div>
     </div>
