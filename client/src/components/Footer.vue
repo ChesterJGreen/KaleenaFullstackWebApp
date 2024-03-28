@@ -21,7 +21,7 @@
                                 src="/src/assets/img/HomepagePinterestButtonHeader.png"></a>
                     </ul>
                     <ul>
-                        <a href="https://www.youtube.com"><img width="25"
+                        <a href="https://www.youtube.com/channel/UCQuVNKgXpWyfUo8CmevMWNA"><img width="25"
                                 src="/src/assets/img/HomepageHeaderYouTubeButton.png"></a>
                     </ul>
                 </ul>

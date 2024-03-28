@@ -55,7 +55,7 @@
                               src="/src/assets/img/HomepagePinterestButtonHeader.png"></a>
                         </li>
                         <li class=" mx-2 btn selectable">
-                          <a href="https://www.youtube.com/"><img width="40"
+                          <a href="https://www.youtube.com/channel/UCQuVNKgXpWyfUo8CmevMWNA"><img width="40"
                               src="/src/assets/img/HomepageHeaderYouTubeButton.png"></a>
                         </li>
                       </div>

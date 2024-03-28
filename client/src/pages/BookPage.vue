@@ -96,7 +96,7 @@
       <div class="col-5 mt-5">
         <div class="row">
           <div class="col-12 mt-5">
-            <p><span class="playlist-font x-large">Sarah </span><span class="xx-large prata-font">loves the storybook romances</span></p>
+            <p><span class="playlist-font xx-large">Sarah </span><span class="x-large prata-font">loves the storybook romances</span></p>
                 <p><span class="prata-font x-large">and <span class="playlist-font xx-large">Gavin</span> fits the modle of her <span class="playlist-font x-large">perfect</span></span></p>
                 <p><span class="prata-font x-large">fantasy. So why fight to get out of a</span></p>
                 <p><span class="prata-font x-large"><span class="playlist-font xx-large">marriage</span> to the cowboy who would do</span></p>
@@ -105,7 +105,7 @@
           </div>
             <div class="col-12">
               <div class="row align-items-center">
-                <div class="col-3 offset-4">
+                <div class="col-4 offset-4">
                   <div class="rounded-pill p-2 volk-font bg-pink1 pink-border-amazon text-center" style="button"><a
                       href="https://www.amazon.com/author/kaleenashreeve"><u class="amazon-text"><span class="amazon-text">Buy
                           on Amazon</span></u></a></div>
@@ -249,7 +249,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <span class="playlist-font xxx-large"> Christmnas go-along Novels</span>
+                <span class="playlist-font xxx-large"> Christmnas go-along Novellas</span>
               </div>
               <div class="col-12">
                 <img src="/src/assets/img/HeartDivider.png" width="400">
