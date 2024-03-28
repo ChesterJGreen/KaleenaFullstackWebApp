@@ -208,7 +208,7 @@
                       aria-valuemin="0" aria-valuemax="100">
                       <div
                         class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped large volk-font"
-                        style="width: 25%">25%</div>
+                        width="25%">25%</div>
                     </div>
                   </div>
                   <div class="col-12 mt-2">
@@ -219,7 +219,7 @@
                       aria-valuemin="0" aria-valuemax="100">
                       <div
                         class="progress-bar progress-bar-color progress-bar-animated progress-bar-striped large volk-font"
-                        style="width: 25%">25%</div>
+                        width="25%">25%</div>
                     </div>
                   </div>
                 </div>
