@@ -1,5 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { authGuard } from '@bcwdev/auth0provider-client'
+import QR10PIPPageVue from './pages/QR10PIPPage.vue'
 
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
@@ -61,12 +62,12 @@ const routes = [
     path: '/admin',
     name: 'Admin',
     component: loadPage('AdminPage')
-  }
+  },
 ]
 
 export const router = createRouter({
   linkActiveClass: 'router-link-active',
   linkExactActiveClass: 'router-link-exact-active',
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
