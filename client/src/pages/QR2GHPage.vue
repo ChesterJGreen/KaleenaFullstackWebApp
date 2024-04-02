@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="playlist-font large-4x">Secret Song</h1>
@@ -7,26 +7,26 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <img class="" src="/src/assets/img/HeartDivider.png" width="1000">
+                <img class="" src="/src/assets/img/HeartDivider.png" width="100%">
             </div>
         </div>
-        <div class="row px-5">
-            <div class="col-12 prata-font text-center mt-5">
+        <div class="row">
+            <div class="col-12 prata-font text-center">
                 <div class="row">
-                    <div class="col-1 offset-3 text-end">
+                    <div class="col-3 text-end">
                         <a href="https://www.youtube.com/watch?v=zV40NzkqJrw"><img
                                 src="/src/assets/img/QRRedYouTube.png" width="50"></a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <h5>Dierks Bentley: "I Hold On"</h5>
                     </div>
-                    <div class="col-1">
+                    <div class="col-2">
                         <a href="https://open.spotify.com/track/01e8dGbulrphX8j3fZDQYk"><img width="50" src="/src/assets/img/QRGreenSpotify.png">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-8 offset-2 volk-font mt-3 px-5 text-center">
+            <div class="col-12 volk-font text-center">
                 <h5>
                     <p class="px-5">I listened to Dierks Bentley sing this in his home town.
                         It was my first concert in the pit and I loved the intensity of the music
@@ -39,9 +39,6 @@
                         the land and love he will give his everything to hold on to.</p>
                 </h5>
             </div>
-            <div class="col-8 offset-2">
-                <img src="">
-            </div>
         </div>
     </div>
 </template>
@@ -51,4 +48,32 @@ export default {
     name: 'QR2GH'
 }
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+// div {
+//   border: 1px dotted pink;
+// }
+
+// p {
+//   border: 1px solid green;
+// }
+
+// a {
+//   border: 2px solid yellow
+// }
+
+// li {
+//   border: 1px dashed cyan;
+// }
+
+// img {
+//   border: 1px solid purple;
+// }
+
+// span {
+//   border: 1px dashed brown;
+// }
+
+// button {
+//   border: 1px dashed gray;
+// }
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="playlist-font large-4x">Secret text</h1>
@@ -7,14 +7,14 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <img class="" src="/src/assets/img/HeartDivider.png" width="1000">
+                <img class="" src="/src/assets/img/HeartDivider.png" width="100%">
             </div>
         </div>
         <div class="row px-5">
             <div class="col-12 prata-font text-center mt-3">
                 <h5><u>Sarah's Nightmare</u></h5>
             </div>
-            <div class="col-8 offset-2 volk-font mt-3 px-5">
+            <div class="col-12 volk-font">
                 <h5>
                     <p> It was past midnight and the moon was giving her the needed light. Sarah pulled Gavin’s keys
                         from her pocket and stepped up to the driver’s side of The Beast. Rowdy hadn’t been in Gavin’s

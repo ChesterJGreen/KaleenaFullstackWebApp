@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="playlist-font large-4x">Secret text</h1>
@@ -7,14 +7,14 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <img class="" src="/src/assets/img/HeartDivider.png" width="1000">
+                <img class="" src="/src/assets/img/HeartDivider.png" width="100%">
             </div>
         </div>
         <div class="row px-5">
             <div class="col-12 prata-font text-center mt-5">
                 <h5><u>Arriving home from Moriarty</u></h5>
             </div>
-            <div class="col-8 offset-2 volk-font mt-5 px-5">
+            <div class="col-12 volk-font">
                 <h5>
                     <p>“Wake up,” a voice from the past called through her dream. Sarah opened her eyes and lifted her head. Gavin
                         was standing outside the passenger door. “We’re home. I’ll help you inside.”<br>

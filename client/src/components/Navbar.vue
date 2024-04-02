@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 container-fluid bg-white">
+  <div v-if="screenWidth>1400" class="flex-1 container-fluid bg-white">
     <nav class="row navbar navbar-expand-lg">
       <div class="row">
         <div class="col-12">
@@ -84,9 +84,15 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+
 export default {
   setup() {
-    return {};
+    computed =>{ 
+      let screenWidth = window.screen.width}
+    return {
+      screenWidth
+    };
   },
 };
 </script>
